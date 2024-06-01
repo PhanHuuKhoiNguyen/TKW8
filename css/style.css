@@ -568,7 +568,7 @@ h1 {
   position: absolute;
   top: 20%;
   color: #8a8b8b57;
-  left: 23%;
+  left: 20%;
 }
 .gioithieu h1 {
   margin-bottom: 0;
@@ -602,15 +602,15 @@ h1 {
 
 .gioithieu .icon-item:nth-child(1) {
   top: 21%;
-  left: 10%;
+  left: 6%;
 }
 .gioithieu .icon-item:nth-child(2) {
   top: 26%;
-  left: 37.3%;
+  left: 35.5%;
 }
 .gioithieu .icon-item:nth-child(3) {
   top: 21%;
-  right: 10%;
+  right: 6%;
 }
 .gioithieu .icon-item div {
   position: relative;
@@ -646,19 +646,19 @@ h1 {
   position: absolute;
   border-radius: 25px;
   top: 50%;
-  left: 27%;
+  left: 30%;
   object-fit: cover;
   height: 350px;
-  width: 500px;
+  width: 450px;
 }
 .gioithieu .banner3 {
   position: absolute;
   border-radius: 25px;
   top: 50%;
-  left: 59%;
+  left: 63%;
   object-fit: cover;
   height: 350px;
-  width: 500px;
+  width: 450px;
 }
 .info {
   position: relative;
