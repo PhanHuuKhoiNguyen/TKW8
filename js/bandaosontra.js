@@ -49,10 +49,35 @@ dots.forEach((li, key) => {
   });
 });
 document.querySelector(".prev").addEventListener("click", function () {
-  // Thêm class prev-clicked khi click vào nút prev
   this.classList.add("prev-clicked");
 });
-//bạn muốn đi đâu------------------------------
+// header-----------------------------------
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("searchInput");
+  if (!searchInput) return;
+
+  const placeholderText = "Bạn cần tìm gì?";
+  let currentIndex = 0;
+
+  function typePlaceholder() {
+    if (currentIndex < placeholderText.length) {
+      searchInput.setAttribute(
+        "placeholder",
+        placeholderText.substring(0, currentIndex + 1)
+      );
+      currentIndex++;
+      setTimeout(typePlaceholder, 100);
+    } else {
+      setTimeout(() => {
+        currentIndex = 0;
+        searchInput.setAttribute("placeholder", "");
+        setTimeout(typePlaceholder, 500);
+      }, 2000);
+    }
+  }
+
+  typePlaceholder();
+});
 document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector("header");
   const headerBot = document.querySelector(".header_bot");
@@ -62,74 +87,46 @@ document.addEventListener("DOMContentLoaded", function () {
   let headerBotVisible = false;
 
   window.addEventListener("scroll", function () {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollTop = document.documentElement.scrollTop;
 
     if (scrollTop > lastScrollTop) {
-      // Scrolling down
       header.style.top = "-150px";
       if (headerBotVisible) {
         headerBot.style.height = "0";
       }
     } else {
-      // Scrolling up
       header.style.top = "0";
     }
 
     lastScrollTop = scrollTop;
 
-    // Adding transition for smooth hide/show effect
     header.style.transition = "top 0.5s";
   });
 
-  toggleButton.addEventListener("click", function (event) {
-    event.preventDefault();
+  toggleButton.addEventListener("click", function () {
     headerBotVisible = !headerBotVisible;
-    headerBot.style.height = headerBotVisible ? "315px" : "0";
+    if (headerBotVisible) {
+      headerBot.style.height = "315px";
+      toggleButtonIcon.style.transform = "rotate(180deg)";
+    } else {
+      headerBot.style.height = "0";
+      toggleButtonIcon.style.transform = "rotate(0deg)";
+    }
 
-    // Rotate the toggle button icon 180 degrees
-    toggleButtonIcon.style.transform = headerBotVisible
-      ? "rotate(180deg)"
-      : "rotate(0deg)";
     toggleButtonIcon.style.transition = "transform 0.5s";
   });
 });
-
 //infomation----------------------------
 document.addEventListener("DOMContentLoaded", function () {
   const link = document.querySelector(".content a");
   const info = document.querySelector(".infomation");
-  const triangle = document.querySelector("#triangle");
 
   link.addEventListener("mouseover", function () {
     info.style.display = "block";
-    triangle.style.display = "block";
   });
 
   link.addEventListener("mouseout", function () {
-    setTimeout(function () {
-      if (!info.matches(":hover") && !triangle.matches(":hover")) {
-        info.style.display = "none";
-        triangle.style.display = "none";
-      }
-    }, 500);
-  });
-
-  info.addEventListener("mouseleave", function () {
-    setTimeout(function () {
-      if (!link.matches(":hover") && !triangle.matches(":hover")) {
-        info.style.display = "none";
-        triangle.style.display = "none";
-      }
-    }, 500);
-  });
-
-  triangle.addEventListener("mouseleave", function () {
-    setTimeout(function () {
-      if (!link.matches(":hover") && !info.matches(":hover")) {
-        info.style.display = "none";
-        triangle.style.display = "none";
-      }
-    }, 500);
+    info.style.display = "none";
   });
 });
 
@@ -142,16 +139,14 @@ let next1 = document.querySelector(".feedback .buttonss .next1");
 let active1 = 0;
 let lengthitem1 = item3.length - 1;
 
-// Ẩn nút prev khi lần đầu tiên vào trang web
 prev1.style.display = "none";
 
 next1.onclick = function () {
   if (active1 < lengthitem1) {
     active1++;
-    prev1.style.display = "block"; // Hiển thị nút prev khi nhấn nút next
+    prev1.style.display = "block";
     reloadSlider1();
   }
-  // Kiểm tra nếu đến phần tử cuối cùng, ẩn nút next
   if (active1 === lengthitem1) {
     next1.style.display = "none";
   }
@@ -160,10 +155,9 @@ next1.onclick = function () {
 prev1.onclick = function () {
   if (active1 > 0) {
     active1--;
-    next1.style.display = "block"; // Hiển thị lại nút next khi nhấn nút prev
+    next1.style.display = "block";
     reloadSlider1();
   }
-  // Kiểm tra nếu đang ở phần đầu tiên, ẩn nút prev
   if (active1 === 0) {
     prev1.style.display = "none";
   }
@@ -173,56 +167,11 @@ function reloadSlider1() {
   let itemWidth1 = item3[active1].offsetWidth;
   listfeedback.style.left = -itemWidth1 * active1 + "px";
 
-  // Kiểm tra nếu đang ở vị trí đầu tiên, ẩn nút prev
   if (active1 === 0) {
     prev1.style.display = "none";
   }
 }
 
-let listimg = document.querySelector(".slider-img .list-item");
-let item4 = document.querySelectorAll(".slider-img .list-item .item");
-let prev2 = document.querySelector(".xuhuong .buttonsss .prev2");
-let next2 = document.querySelector(".xuhuong .buttonsss .next2");
-
-let active2 = 0;
-let lengthitem2 = item4.length - 1;
-
-// Ẩn nút prev khi lần đầu tiên vào trang web
-prev2.style.display = "none";
-
-next2.onclick = function () {
-  if (active2 < lengthitem2) {
-    active2++;
-    prev2.style.display = "block"; // Hiển thị nút prev khi nhấn nút next
-    reloadSlider2();
-  }
-  // Kiểm tra nếu đến phần tử cuối cùng, ẩn nút next
-  if (active2 === lengthitem2) {
-    next2.style.display = "none";
-  }
-};
-
-prev2.onclick = function () {
-  if (active2 > 0) {
-    active2--;
-    next2.style.display = "block"; // Hiển thị lại nút next khi nhấn nút prev
-    reloadSlider2();
-  }
-  // Kiểm tra nếu đang ở phần đầu tiên, ẩn nút prev
-  if (active2 === 0) {
-    prev2.style.display = "none";
-  }
-};
-
-function reloadSlider2() {
-  let itemWidth2 = item4[active2].offsetWidth;
-  listimg.style.left = -itemWidth2 * active2 + "px";
-
-  // Kiểm tra nếu đang ở vị trí đầu tiên, ẩn nút prev
-  if (active2 === 0) {
-    prev2.style.display = "none";
-  }
-}
 document.addEventListener("DOMContentLoaded", function () {
   const xuhuong = document.querySelector(".xuhuong");
   const content1 = document.querySelector(".xuhuong .content1");
@@ -233,11 +182,11 @@ document.addEventListener("DOMContentLoaded", function () {
     content1.style.height = "max-content";
     xemthem.style.display = "none";
     xemithon.style.display = "block";
-    xuhuong.style.height = "1250px";
+    xuhuong.style.height = "1350px";
   });
 
   xemithon.addEventListener("click", function () {
-    content1.style.height = "135px"; // hoặc giá trị bạn muốn
+    content1.style.height = "135px";
     xemithon.style.display = "none";
     xemthem.style.display = "block";
     xuhuong.style.height = "350px";
@@ -250,11 +199,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const upIcon = div.querySelector(".fa-chevron-up");
     const downIcon = div.querySelector(".fa-chevron-down");
 
-    // Ẩn icon .down ban đầu
     downIcon.style.display = "none";
 
     div.addEventListener("click", function () {
-      // Nếu chiều cao của div là scrollHeight hoặc max-content, đặt lại thành 62px và hiển thị icon .up
       if (
         this.style.height === `${this.scrollHeight}px` ||
         this.style.height === "max-content"
@@ -263,10 +210,8 @@ document.addEventListener("DOMContentLoaded", function () {
         upIcon.style.display = "block";
         downIcon.style.display = "none";
       } else {
-        // Nếu không, đặt chiều cao của div được click là scrollHeight và hiển thị icon .down
         this.style.height = `${this.scrollHeight}px`;
 
-        // Ẩn icon .up và hiển thị icon .down của các div khác
         thongtinDivs.forEach(function (otherDiv) {
           if (otherDiv !== div) {
             otherDiv.style.height = "62px";
@@ -275,10 +220,101 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
 
-        // Hiển thị icon .down và ẩn icon .up của div được click
         upIcon.style.display = "none";
         downIcon.style.display = "block";
       }
     });
+  });
+});
+//feedback-mobile---------------
+let listfeedback_mobile = document.querySelector(
+  ".feedback-mobile .list-feedback"
+);
+let item3_mobile = document.querySelectorAll(
+  ".feedback-mobile .list-feedback .item"
+);
+let prev1_mobile = document.querySelector(".feedback-mobile .buttonss .prev1");
+let next1_mobile = document.querySelector(".feedback-mobile .buttonss .next1");
+
+let active1_mobile = 0;
+let lengthitem1_mobile = item3_mobile.length - 1;
+
+prev1_mobile.style.display = "none";
+
+next1_mobile.onclick = function () {
+  if (active1_mobile < lengthitem1_mobile) {
+    active1_mobile++;
+    prev1_mobile.style.display = "block";
+    reloadSlider1_mobile();
+  }
+  if (active1_mobile === lengthitem1_mobile) {
+    next1_mobile.style.display = "none";
+  }
+};
+
+prev1_mobile.onclick = function () {
+  if (active1_mobile > 0) {
+    active1_mobile--;
+    next1_mobile.style.display = "block";
+    reloadSlider1_mobile();
+  }
+  if (active1_mobile === 0) {
+    prev1_mobile.style.display = "none";
+  }
+};
+
+function reloadSlider1_mobile() {
+  let itemWidth1_mobile = item3_mobile[active1_mobile].offsetWidth;
+  listfeedback_mobile.style.left = -itemWidth1_mobile * active1_mobile + "px";
+
+  if (active1_mobile === 0) {
+    prev1_mobile.style.display = "none";
+  }
+}
+//header-Mobile------------------------------
+document.addEventListener("DOMContentLoaded", function () {
+  const headerMobile = document.querySelector(".headermobile");
+  let lastScrollTop = 0;
+
+  window.addEventListener("scroll", function () {
+    const scrollTop = document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      headerMobile.style.top = "-50px";
+    } else {
+      headerMobile.style.top = "0";
+    }
+
+    lastScrollTop = scrollTop;
+
+    headerMobile.style.transition = "top 0.5s";
+  });
+});
+//
+const openmenu = document.getElementById("openmenu");
+const menu = document.querySelector(".headermobile .menu");
+const closemenu = document.getElementById("closemenu");
+const headerMobile = document.querySelector(".headermobile ul");
+const body = document.body;
+openmenu.addEventListener("click", function () {
+  menu.style.width = "70%";
+  menu.style.transition = "width 0.3s ease";
+  body.style.background = "rgba(128, 128, 128, 0.235)";
+  headerMobile.style.display = "none";
+});
+closemenu.addEventListener("click", function () {
+  menu.style.width = "0";
+  body.style.background = "white";
+  menu.style.transition = "width 0.3s ease";
+  headerMobile.style.display = "flex";
+});
+
+//
+const banmuondidau = document.querySelector(".menu .menubot .banmuondidau");
+const diadiem = document.querySelectorAll(".menu .menubot .banmuondidau div");
+banmuondidau.addEventListener("click", function () {
+  banmuondidau.style.height = "max-content";
+  diadiem.forEach((diadiem) => {
+    diadiem.style.display = diadiem.style.display === "none" ? "block" : "none";
   });
 });
