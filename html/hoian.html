@@ -10,7 +10,23 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
 
-    <link rel="stylesheet" href="./../css/hoian.css" />
+    <link
+      rel="stylesheet"
+      href="./../css/hoian-mobile.css"
+      media="(max-width: 700px)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./../css/hoian-tablet.css"
+      media="(min-width: 701px) and (max-width: 1024px)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./../css/hoian.css"
+      media="(min-width: 1025px)"
+    />
   </head>
   <body>
     <header>
@@ -25,8 +41,7 @@
           <i class="fa-solid fa-phone-volume"></i>
           <span>Hotline</span><span>08796366334</span>
         </div>
-        <a href="./signup.html
-          " id="dangky">Đăng ký</a>
+        <a href="./signup.html" id="dangky">Đăng ký</a>
         <a href="./login-form.html" id="dangnhap">Đăng nhập</a>
       </div>
       <div class="header_middle">
@@ -35,7 +50,9 @@
             <a href="./Home_page.html">Trang chủ </a>
           </li>
           <li>
-            <a class="a" href="#!">Bạn muốn đi đâu<i class="fa-solid fa-chevron-up"></i></a>
+            <a class="a" href="#!"
+              >Bạn muốn đi đâu<i class="fa-solid fa-chevron-up"></i
+            ></a>
           </li>
           <li>
             <a href="./../html/gioithieu.html">Giới thiệu </a>
@@ -46,9 +63,6 @@
           <li>
             <a href="./../html/lienhe.html">Liên hệ </a>
           </li>
-          <li>
-            <a href="">Khách sạn </a>
-          </li>
         </ul>
       </div>
       <div class="header_bot">
@@ -58,8 +72,34 @@
           <li><a href="./nguhanhson.html">Ngũ Hành Sơn</a></li>
           <li><a href="./nuithantai.html">Núi thần tài</a></li>
           <li><a href="./hoian.html">Hội An</a></li>
-          
         </ul>
+      </div>
+    </header>
+    <header class="headermobile">
+      <ul>
+        <li><i id="openmenu" class="fa-solid fa-bars"></i></li>
+        <li><h2>TRAVELS</h2></li>
+        <li><a href="./login-form.html" id="dangnhap">Đăng nhập</a></li>
+      </ul>
+      <div class="menu">
+        <div class="menutop">
+          <h1>Danh mục</h1>
+          <i id="closemenu" class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="menubot">
+          <div><a href="./Home_page.html">Trang chủ</a></div>
+          <div class="banmuondidau">
+            <a href="#!">Bạn muốn đi đâu</a>
+            <div><a href="./banahills.html">Bà Nà Hills</a></div>
+            <div><a href="./bandaosontra.html">Bán Đảo Sơn Trà</a></div>
+            <div><a href="./nguhanhson.html">Ngũ Hành Sơn</a></div>
+            <div><a href="./nuithantai.html">Núi Thần Tài</a></div>
+            <div><a href="./hoian.html">Hội An</a></div>
+          </div>
+          <div><a href="./gioithieu.html">Giới thiệu</a></div>
+          <div><a href="./blog.html">Blog</a></div>
+          <div><a href="./lienhe.html">Liên hệ</a></div>
+        </div>
       </div>
     </header>
     <div class="anh">
@@ -76,7 +116,10 @@
 
         <a href="#!"><u>Xem thêm</u> </a>
         <i id="triangle" class="fa-solid fa-caret-left"></i>
-        <span class="span3">Thời gian tuyệt nhất để đến</span>
+        <span class="span3"
+          >Thời gian tuyệt nhất <br />
+          để đến</span
+        >
         <span class="span4">Thời lượng lý tưởng</span>
         <span class="span5">THG 2</span>
         <span class="span6">3 ngày</span>
@@ -99,7 +142,10 @@
           />
         </div>
         <div class="item">
-          <img src="./../img/Hội An/vietnam-hội-an-reflections-asia.jpg" alt="" />
+          <img
+            src="./../img/Hội An/vietnam-hội-an-reflections-asia.jpg"
+            alt=""
+          />
         </div>
       </div>
       <div class="slider">
@@ -120,7 +166,10 @@
             />
           </div>
           <div class="item">
-            <img src="./../img/Hội An/vietnam-hội-an-reflections-asia.jpg" alt="" />
+            <img
+              src="./../img/Hội An/vietnam-hội-an-reflections-asia.jpg"
+              alt=""
+            />
           </div>
         </div>
         <div class="buttons">
@@ -148,7 +197,7 @@
         </p>
       </div>
     </div>
-    <div class="h1" id="h1"><h1>4 Địa điểm du lịch Bà Nà Hills</h1></div>
+    <h1 class="h1">4 Địa điểm du lịch Hội An</h1>
     <div class="dichvu">
       <div>
         <img src="./../img/Hội An/chua-cau-hoi-an-2.jpg" alt="" />
@@ -198,7 +247,7 @@
         <button class="btn">Mua ngay</button>
       </div>
     </div>
-    <div class="h1"><h1>Top điểm du lịch Sun World Ba Na Hills</h1></div>
+    <h1>Top điểm du lịch Sun World Hội An</h1>
     <div class="diadiemdulich">
       <div>
         <img src="./../img/Hội An/chuacau.jpg" alt="" />
@@ -254,7 +303,7 @@
         <a href="">Khám phá <i class="fa-solid fa-chevron-right"></i> </a>
       </div>
       <div>
-        <img src="./../img/Hội An/toctran.jpg.crdownload" alt="" />
+        <img src="./../img/hoi-an-1024x615.png" alt="" />
         <p>Nhà thờ Tộc Trần</p>
         <span
           >Nhà thờ Tộc Trần do một vị quan họ Trần từ Trung Hoa di chuyển về Hội
@@ -265,7 +314,7 @@
         <a href="">Khám phá <i class="fa-solid fa-chevron-right"></i> </a>
       </div>
     </div>
-    <div class="h1"><h1>Đánh giá của khách hàng</h1></div>
+    <h1>Đánh giá của khách hàng</h1>
     <div class="feedback">
       <div class="list-feedback">
         <div class="item">
@@ -294,7 +343,7 @@
             <p>
               Đánh giá cho: <a href="">Tour Bà Nà Hills 1 Ngày Từ Đà Nẵng</a>
             </p>
-            <p>Người dùng Klook Đăng 7 ngày trước</p>
+            <p>Người dùng TRAVELS Đăng 7 ngày trước</p>
             <p>
               Những ngọn đồi thật tuyệt vời! Có quá nhiều việc phải làm trong
               thời gian ngắn như vậy. Nơi tuyệt vời và cũng đáng để ghé thăm.
@@ -326,7 +375,7 @@
             ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
             ><i class="fa-solid fa-star"></i>
             <p>Đánh giá cho: <a href="">Tour Ngày Sun World Bà Nà Hills</a></p>
-            <p>Người dùng Klook Đăng 7 ngày trước</p>
+            <p>Người dùng TRAVELS Đăng 7 ngày trước</p>
             <p>
               Hướng dẫn viên Long của chúng tôi thật tuyệt vời, anh ấy có kinh
               nghiệm và đưa chúng tôi di chuyển để tránh đám đông. Hành trình
@@ -364,7 +413,7 @@
                 >Private Check-out Tour:Bà Nà Hills,Da Nang Airport Drop-off</a
               >
             </p>
-            <p>Người dùng Klook Đăng 40 ngày trước</p>
+            <p>Người dùng TRAVELS Đăng 40 ngày trước</p>
             <p>
               Buổi sáng đón khách suôn sẻ,không cần lo lắng về hành lý, ra vào
               thuận tiện vì tôi đã nhận được vé điện tử đi Bà Nà Hills,dịch vụ
@@ -379,16 +428,134 @@
         <button class="next1"><i class="fa-solid fa-chevron-right"></i></button>
       </div>
     </div>
-    <div class="h1"><h1>Xu hướng</h1></div>
+    <div class="feedback-mobile">
+      <div class="list-feedback">
+        <div class="item">
+          <div>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+            <p>
+              Đánh giá cho:
+              <a href="">Tour Ngày Tham Quan Bà Nà Hills Từ Đà Nẵng</a>
+            </p>
+            <p>Angielou ****** Đăng 11 ngày trước</p>
+            <p>
+              Hành trình tốt. Xe bán tải gọn gàng. Hướng dẫn viên du lịch, ông
+              Chai, rất lôi cuốn, xen vào đó là những câu chuyện cười. Anh ấy đã
+              cố gắng hết sức để tập hợp và phân nhóm mọi người, nhưng mỗi nhóm
+              nên làm theo hướng dẫn và đi cùng nhóm. Món quà lưu niệm của anh
+              vào cuối chuyến đi thật bất ngờ. Nhìn chung, đáng đồng tiền bát
+              gạo.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+            <p>
+              Đánh giá cho: <a href="">Tour Bà Nà Hills 1 Ngày Từ Đà Nẵng</a>
+            </p>
+            <p>Người dùng TRAVELS Đăng 7 ngày trước</p>
+            <p>
+              Những ngọn đồi thật tuyệt vời! Có quá nhiều việc phải làm trong
+              thời gian ngắn như vậy. Nơi tuyệt vời và cũng đáng để ghé thăm.
+              Chúng tôi đã đặt một chuyến du lịch riêng với hy vọng tối đa hóa
+              thời gian cho 3 đứa con của mình. Có vẻ hơi vội vã khi vượt qua
+              mọi thứ nhưng nơi này quá lớn nên phải mất một thời gian để đi
+              lại. Thật không may, hướng dẫn của chúng tôi không thú vị như
+              chúng tôi mong đợi. Có lẽ việc đặt phòng cần hiển thị độ tuổi của
+              khách vì cô ấy dự kiến sẽ có 4 người lớn và 1 trẻ em thay vì 2
+              người lớn và 3 trẻ em. Hướng dẫn của chúng tôi không quá hướng
+              ngoại và không cung cấp nhiều chi tiết khi chúng tôi hỏi các lựa
+              chọn của chúng tôi là gì. Chúng tôi hy vọng cô ấy sẽ có thêm thông
+              tin dựa trên kinh nghiệm của mình nhưng dường như cô ấy còn thiếu
+              kiến thức. Tốt hơn hết là chúng ta nên đi tham quan theo nhóm nhỏ
+              và được tự mình đi dạo xung quanh. Chúng tôi đã chọn mua bữa trưa
+              cho riêng mình và đây là một lựa chọn tốt cho chúng tôi vì chúng
+              tôi không cần tiệc buffet. Việc chuyển giao tư nhân cũng tốt nhưng
+              một phương tiện chung cũng sẽ ổn ở Đà Nẵng. Nếu bạn chưa quyết
+              định tham gia một chuyến du lịch riêng, tôi sẽ khuyên bạn nên đi
+              cùng một nhóm nhỏ. Dù sao đi nữa, chuyến thăm thật tuyệt vời và
+              bọn trẻ đã vui vẻ và chúng tôi đã thấy những gì chúng tôi muốn
+              thấy.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+            <p>Đánh giá cho: <a href="">Tour Ngày Sun World Bà Nà Hills</a></p>
+            <p>Người dùng TRAVELS Đăng 7 ngày trước</p>
+            <p>
+              Hướng dẫn viên Long của chúng tôi thật tuyệt vời, anh ấy có kinh
+              nghiệm và đưa chúng tôi di chuyển để tránh đám đông. Hành trình
+              thực sự có giá trị đồng tiền. Giải thích dài dòng và lập kế hoạch
+              vượt xa sự mong đợi của chúng tôi! Nhóm 9 người của chúng tôi thực
+              sự thích thú. Cảm ơn
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+            <p>
+              Đánh giá cho: <a href="">Tour Bà Nà Hills 1 Ngày Từ Đà Nẵng</a>
+            </p>
+            <p>Cleopatra ****** Đăng 58 ngày trước</p>
+            <p>
+              Bà Nà Hills đẹp mê hồn. Nơi này rất rộng lớn và là một nơi huyền
+              diệu như Disneyland và tôi thực sự đã yêu. Tôi không nghĩ chúng
+              tôi đã khám phá mọi nơi vì chúng tôi chỉ dành một ngày. Lời khuyên
+              của mình là nên đi xe riêng để có nhiều thời gian rảnh. Phong cảnh
+              rất đẹp và may mắn là thời tiết tốt nên chúng tôi đã chụp được rất
+              nhiều ảnh. Chắc chắn đáng để ghé thăm và rất khuyến khích khi bạn
+              ghé thăm Đà Nẵng.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+            <p>
+              Đánh giá cho:<a href=""
+                >Private Check-out Tour:Bà Nà Hills,Da Nang Airport Drop-off</a
+              >
+            </p>
+            <p>Người dùng TRAVELS Đăng 40 ngày trước</p>
+            <p>
+              Buổi sáng đón khách suôn sẻ,không cần lo lắng về hành lý, ra vào
+              thuận tiện vì tôi đã nhận được vé điện tử đi Bà Nà Hills,dịch vụ
+              mát-xa tốt, bữa tối là bữa ăn Việt Nam tự nấu và tôi cũng rất
+              thích bia.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="buttonss">
+        <button class="prev1"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="next1"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+    <h1 class="h1xuhuong">Xu hướng</h1>
 
     <div class="xuhuong">
       <div class="slider-img">
         <div class="list-item">
           <div class="item">
             <div class="item1">
-              <img src="./../img/Núi thần tài/14934312475544 (1).jpg" alt="" /><a
-                >Núi thần tài</a
-              >
+              <img
+                src="./../img/Núi thần tài/14934312475544 (1).jpg"
+                alt=""
+              /><a>Núi thần tài</a>
             </div>
             <div class="item2">
               <img src="./../img/ban-dao-son-tra-3-1024x550.webp" alt="" /><a
@@ -430,126 +597,159 @@
       <a href="#!" class="xemthem"><u>Xem thêm</u></a>
       <a href="#!" class="xemithon"><u>Xem ít hơn</u></a>
     </div>
-    <div class="h1"><h1>Những câu hỏi phổ biến về Hội An</h1></div>        
-          <div class="thongtin">
-            <div>
-              <h2>Hội An nổi tiếng vì điều gì?</h2>
-               <i id="up" class="fa-solid fa-chevron-up"></i>
-              <i id="down" class="fa-solid fa-chevron-down"></i>
-              <p>Sun World Bà Nà Hills nổi tiếng với khung cảnh thiên nhiên tuyệt đẹp và kiến trúc độc đáo. Nằm tại Đà Nẵng, Việt Nam, nơi này được biết đến với những cảnh quan tự nhiên tuyệt vời, bao gồm cảnh sông núi hùng vĩ và khí hậu mát mẻ quanh năm. Bên cạnh đó, Sun World Bà Nà Hills còn có kiến trúc độc đáo với các công trình xây dựng được lấy cảm hứng từ kiến trúc Pháp cổ điển. Du khách có thể khám phá các công trình nổi tiếng như Cầu Vàng, Chùa Linh Ứng, và Công viên Châu Âu. Sun World Bà Nà Hills là điểm đến lý tưởng cho những ai muốn tận hưởng không gian thiên nhiên tuyệt đẹp và khám phá kiến trúc độc đáo của Đà Nẵng.</p>
-            </div>
-            <div>
-              <h2>Có phù hợp cho trẻ em và gia đình không?</h2>
-               <i id="up" class="fa-solid fa-chevron-up"></i>
-              <i id="down" class="fa-solid fa-chevron-down"></i>
-              <p>Sun World Bà Nà Hills là một điểm đến tuyệt vời cho trẻ em và gia đình. Công viên có nhiều hoạt động thú vị và phù hợp với mọi lứa tuổi. Trẻ em sẽ thích thú với các trò chơi và vui chơi trong công viên, như trượt tuyết, trượt ván, và trò chơi nước. Ngoài ra, công viên còn có các khu vui chơi giáo dục, nơi trẻ em có thể học hỏi và khám phá về thiên nhiên và văn hóa. Đối với gia đình, Sun World Bà Nà Hills cung cấp nhiều hoạt động giải trí như tham quan các điểm tham quan, thưởng thức ẩm thực đặc sản và tham gia các sự kiện và lễ hội. Với không gian xanh mát và khung cảnh đẹp, đây là một điểm đến lý tưởng để cả gia đình tận hưởng kỳ nghỉ vui vẻ và ý nghĩa.</p>
-            </div>
-            <div>
-              <h2>Cách tốt nhất để trải nghiệm Hội An là gì?</h2>
-               <i id="up" class="fa-solid fa-chevron-up"></i>
-              <i id="down" class="fa-solid fa-chevron-down"></i>
-              <p>Để trải nghiệm tốt nhất Sun World Bà Nà Hills, bạn nên bắt đầu bằng việc lên đỉnh bằng cáp treo. Từ đó, bạn có thể tận hưởng khung cảnh tuyệt đẹp của núi Bà Nà và vùng đất Đà Nẵng từ trên cao. Sau đó, hãy khám phá các điểm tham quan và hoạt động tại khu du lịch. Bạn có thể tham gia các trò chơi giải trí, thăm các công trình kiến trúc độc đáo như Cầu Vàng và Chùa Linh Ứng, hay thưởng thức ẩm thực đặc sản tại các nhà hàng và quán cà phê trên đỉnh núi. Đừng quên dành thời gian để tham quan các khu vườn hoa và tham gia các hoạt động giải trí như trượt tuyết và lướt sóng trên không. Bằng cách tận hưởng mọi điểm đặc sắc của Sun World Bà Nà Hills, bạn sẽ có một trải nghiệm đáng nhớ tại địa điểm này.</p>
-            </div>
-            <div>
-              <h2>Có phù hợp cho du khách có ngân sách hạn chế không?</h2>
-               <i id="up" class="fa-solid fa-chevron-up"></i>
-              <i id="down" class="fa-solid fa-chevron-down"></i>
-              <p>Sun World Bà Nà Hills là một điểm đến tuyệt vời cho du khách có ngân sách hạn chế. Công viên giải trí này cung cấp nhiều hoạt động thú vị và trải nghiệm độc đáo mà không làm tốn quá nhiều tiền. Du khách có thể tham gia các hoạt động như đi cáp treo, thăm các khu vườn hoa đẹp mắt, tham quan các công trình kiến trúc độc đáo và thưởng thức ẩm thực đặc sản. Với mức giá vé hợp lý và nhiều ưu đãi đặc biệt, du khách có thể trải nghiệm một ngày vui chơi tuyệt vời tại Sun World Bà Nà Hills mà không cần phải lo lắng về ngân sách. Đây là một điểm đến lý tưởng cho những ai muốn khám phá và trải nghiệm văn hóa địa phương mà không làm tốn quá nhiều tiền.</p>
-            </div>
-            <div>
-              <h2>Thời điểm nào trong năm là thích hợp nhất để tham quan Hội An?</h2>
-               <i id="up" class="fa-solid fa-chevron-up"></i>
-              <i id="down" class="fa-solid fa-chevron-down"></i>
-              <p>Sun World Bà Nà Hills là một điểm đến hấp dẫn quanh năm, tuy nhiên, có một số thời điểm trong năm được coi là thích hợp nhất để tham quan. Tháng 3 đến tháng 9 là mùa hè ở Đà Nẵng, và đây là thời gian tốt nhất để trải nghiệm Sun World Sun World Bà Nà Hills. Trong khoảng thời gian này, thời tiết ấm áp và mát mẻ, không quá nóng hoặc lạnh. Ngoài ra, từ tháng 10 đến tháng 12 cũng là một thời điểm tốt để tham quan, vì thời tiết mát mẻ và không quá đông. Tuy nhiên, nếu bạn muốn tránh đông đúc và muốn tận hưởng không gian yên tĩnh hơn, bạn có thể xem xét tham quan vào các tháng khác trong năm. Dù bạn đến vào thời điểm nào, Sun World Bà Nà Hills sẽ mang đến cho bạn những trải nghiệm tuyệt vời với cảnh quan tuyệt đẹp và các hoạt động thú vị.</p>
-            </div>
-          </div>
-          
-          </div>
-          <div class="khampha">
-            <h1>Khám phá thêm trên Klook</h1>
-            <p>Những trải nghiệm gần Đà nẵng</p>
-           <ul class="list1">
-            <li><a href="" class="a1">Suối Thần Tài</a></li>
-            <li><a href="">Bảo Tàng Chăm</a></li>
-            <li><a href="">Nam Ô</a></li>
-            <li><a href="">Cù Lao Chàm</a></li>
-            <li><a href="">Suối nước nóng Đà Nẵng</a></li>
-            <li><a href="/html/nguhanhson.html">Ngũ Hành Sơn</a></li>
-            <li><a href="">Mikazuki</a></li>
-            <li><a class="alast" href="">Chợ Hàn </a></li>
-           </ul>
-          </div>
-          <footer class="footer">
-         
-            <div class="row">
-              <!-- column1 -->
-              <div class="column">
-                <h3>TRAVELS</h3>
-                <ul class="list">
+    <h1>Những câu hỏi phổ biến về Hội An</h1>
+    <div class="thongtin">
+      <div>
+        <h2>Hội An Đà Nẵng nổi tiếng vì điều gì?</h2>
+        <i id="up" class="fa-solid fa-chevron-up"></i>
+        <i id="down" class="fa-solid fa-chevron-down"></i>
+        <p>
+          Hội An nổi tiếng với phố cổ được UNESCO công nhận, mang kiến trúc đa
+          dạng của Việt Nam, Nhật Bản, Trung Quốc và Pháp. Thành phố này hấp dẫn
+          bởi lễ hội đèn lồng lung linh, ẩm thực phong phú như cao lầu, mì
+          Quảng, và các làng nghề truyền thống. Hội An còn có chợ đêm sôi động
+          và bãi biển An Bàng tuyệt đẹp, thu hút du khách từ khắp nơi.
+        </p>
+      </div>
+      <div>
+        <h2>Có phù hợp cho trẻ em và gia đình không?</h2>
+        <i id="up" class="fa-solid fa-chevron-up"></i>
+        <i id="down" class="fa-solid fa-chevron-down"></i>
+        <p>
+          Hội An phù hợp cho trẻ em và gia đình nhờ không gian yên tĩnh, an
+          toàn, nhiều hoạt động thủ công và khám phá văn hóa, cùng ẩm thực phong
+          phú.
+        </p>
+      </div>
+      <div>
+        <h2>Cách tốt nhất để trải nghiệm Hội An là gì?</h2>
+        <i id="up" class="fa-solid fa-chevron-up"></i>
+        <i id="down" class="fa-solid fa-chevron-down"></i>
+        <p>
+          Cách tốt nhất để trải nghiệm Hội An là đi bộ khám phá phố cổ với kiến
+          trúc đa dạng và đèn lồng lung linh. Tham gia làm đèn lồng và các hoạt
+          động thủ công tại làng nghề truyền thống. Thưởng thức ẩm thực địa
+          phương như cao lầu, mì Quảng, và bánh mì Hội An. Thăm chợ đêm Hội An
+          để mua sắm và thưởng thức ẩm thực đường phố. Thư giãn tại bãi biển An
+          Bàng với cảnh đẹp và nước biển trong xanh.
+        </p>
+      </div>
+      <div>
+        <h2>Có phù hợp cho du khách có ngân sách hạn chế không?</h2>
+        <i id="up" class="fa-solid fa-chevron-up"></i>
+        <i id="down" class="fa-solid fa-chevron-down"></i>
+        <p>
+          Hội An rất phù hợp cho du khách có ngân sách hạn chế nhờ chi phí sinh
+          hoạt thấp, nhiều lựa chọn ăn uống giá rẻ, chỗ ở phong phú từ homestay
+          đến nhà nghỉ bình dân, và nhiều điểm tham quan miễn phí hoặc có giá vé
+          phải chăng như phố cổ, chùa Cầu, và chợ đêm.
+        </p>
+      </div>
+      <div>
+        <h2>Thời điểm nào trong năm là thích hợp nhất để tham quan Hội An?</h2>
+        <i id="up" class="fa-solid fa-chevron-up"></i>
+        <i id="down" class="fa-solid fa-chevron-down"></i>
+        <p>
+          Thời điểm thích hợp nhất để tham quan Hội An là từ tháng 2 đến tháng
+          4, khi thời tiết khô ráo, mát mẻ và dễ chịu. Đây là giai đoạn ít mưa,
+          nhiệt độ không quá cao, rất thuận lợi cho việc khám phá phố cổ và tham
+          gia các hoạt động ngoài trời.
+        </p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="row">
+        <!-- column1 -->
+        <div class="column">
+          <h3>TRAVELS</h3>
+          <ul class="list">
+            <li>
+              <strong>Location:</strong
+              ><span>470 Đ. Trần Đại Nghĩa Ngũ Hành Sơn Đà Nẵng,Việt Nam</span>
+            </li>
+            <li>
+              <strong>Email:</strong><span>nguyenphk.23itb@vku.udn.vn</span>
+            </li>
+            <li><strong>Phone:</strong><span>0879636334</span></li>
+            <li>
+              <h3>Kết nối với chúng tôi</h3>
+              <div class="social">
+                <ul>
                   <li>
-                  <strong>Location:</strong><span>470 Đ. Trần Đại Nghĩa Ngũ Hành Sơn Đà Nẵng,Việt Nam</span>
+                    <a href="#">
+                      <i class="fa-brands fa-tiktok"></i>
+                    </a>
                   </li>
                   <li>
-                    <strong>Email:</strong><span>nguyenphk.23itb@vku.udn.vn</span>
+                    <a href="#!">
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
                   </li>
                   <li>
-                    <strong>Phone:</strong><span>0879636334</span>
+                    <a href="#!">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
                   </li>
                   <li>
-                    <h3>Kết nối với chúng tôi</h3>
-                    <div class="social">
-                      <ul>
-                        <li style="--clr:#ff0050;">
-                          <a href="#">
-                            <i class="fa-brands fa-tiktok"></i>
-                          </a> 
-                        </li>
-                        <li style="--clr:#1877F2">
-                         <a href="#!">
-                          <i class="fa-brands fa-facebook"></i>
-                         </a>
-                        </li>
-                        <li style="--clr: #E4405F">
-                        <a href="#!">
-                          <i class="fa-brands fa-instagram"></i>
-                        </a>
-                      </li>
-                      <li style="--clr:#333333">  
-                        <a href="#!">
-                          <i class="fa-brands fa-github"></i>
-                        </a>
-                      </li>
-                      </ul>
-                    </div>
+                    <a href="#!">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
                   </li>
-                  </ul>
-                
-              </div>
-              <div class="column">
-                <!-- column2 -->
-                <h3 class="tittle">Về chúng tôi</h3>
-                <ul class="list">
-                  <li><a href="#!"><i class="fa-solid fa-angle-right"></i>Sản phẩm nổi bật</a></li>
-                  <li><a href="#!"><i class="fa-solid fa-angle-right"></i>Sản phẩm khuyến mãi</a></li>
-                  <li><a href="#!"><i class="fa-solid fa-angle-right"></i>Tất cả sản phẩm</a></li>
                 </ul>
               </div>
-            <!-- column3 -->
-              <div class="column">
-                <h3 class="tittle">Chính sách dịch vụ</h3>
-                <ul class="list">
-                  <li><a href="#!"><i class="fa-solid fa-angle-right"></i>Trang chủ </a></li>
-                  <li><a href="#!"><i class="fa-solid fa-angle-right"></i>Bạn muốn đi đâu</a></li>
-                  <li><a href="#!"><i class="fa-solid fa-angle-right"></i>Giới thiệu</a></li>
-                  <li><a href="#!"><i class="fa-solid fa-angle-right"></i>Blogs</a></li>
-                  <li><a href=""><i class="fa-solid fa-angle-right"></i>Liên hệ</a></li>
-                  <li><a href=""><i class="fa-solid fa-angle-right"></i>Khách sạn</a></li>
-                </ul>
-              </div>
-                                                   
-            </div>
-          </div>
-          </footer>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <!-- column2 -->
+          <h3 class="tittle">Về chúng tôi</h3>
+          <ul class="list">
+            <li>
+              <a href="#!"
+                ><i class="fa-solid fa-angle-right"></i>Sản phẩm nổi bật</a
+              >
+            </li>
+            <li>
+              <a href="#!"
+                ><i class="fa-solid fa-angle-right"></i>Sản phẩm khuyến mãi</a
+              >
+            </li>
+            <li>
+              <a href="#!"
+                ><i class="fa-solid fa-angle-right"></i>Tất cả sản phẩm</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- column3 -->
+        <div class="column">
+          <h3 class="tittle">Chính sách dịch vụ</h3>
+          <ul class="list">
+            <li>
+              <a href="#!"><i class="fa-solid fa-angle-right"></i>Trang chủ </a>
+            </li>
+            <li>
+              <a href="#!"
+                ><i class="fa-solid fa-angle-right"></i>Bạn muốn đi đâu</a
+              >
+            </li>
+            <li>
+              <a href="#!"><i class="fa-solid fa-angle-right"></i>Giới thiệu</a>
+            </li>
+            <li>
+              <a href="#!"><i class="fa-solid fa-angle-right"></i>Blogs</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-angle-right"></i>Liên hệ</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-angle-right"></i>Khách sạn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script src="./../js/hoian.js"></script>
   </body>
 </html>
