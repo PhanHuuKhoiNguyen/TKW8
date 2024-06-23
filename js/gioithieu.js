@@ -1,6 +1,7 @@
+// header-----------------------------------
 document.addEventListener("DOMContentLoaded", function () {
-  const searchInput = document.getElementById("searchInput"); // Đảm bảo phần tử tồn tại
-  if (!searchInput) return; // Nếu không tìm thấy phần tử, dừng script
+  const searchInput = document.getElementById("searchInput");
+  if (!searchInput) return;
 
   const placeholderText = "Bạn cần tìm gì?";
   let currentIndex = 0;
@@ -12,13 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
         placeholderText.substring(0, currentIndex + 1)
       );
       currentIndex++;
-      setTimeout(typePlaceholder, 100); // Tăng tốc độ gõ chữ (giảm thời gian chờ)
+      setTimeout(typePlaceholder, 100);
     } else {
       setTimeout(() => {
         currentIndex = 0;
         searchInput.setAttribute("placeholder", "");
-        setTimeout(typePlaceholder, 500); // Đợi 0.5 giây trước khi bắt đầu lại
-      }, 2000); // Đợi 2 giây trước khi reset
+        setTimeout(typePlaceholder, 500);
+      }, 2000);
     }
   }
 
@@ -27,40 +28,86 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector("header");
   const headerBot = document.querySelector(".header_bot");
-  const toggleButton = document.querySelector(".header_middle .a");
-  const toggleButtonIcon = toggleButton.querySelector("i");
   let lastScrollTop = 0;
   let headerBotVisible = false;
 
   window.addEventListener("scroll", function () {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollTop = document.documentElement.scrollTop;
 
     if (scrollTop > lastScrollTop) {
-      // Scrolling down
       header.style.top = "-150px";
       if (headerBotVisible) {
         headerBot.style.height = "0";
       }
     } else {
-      // Scrolling up
       header.style.top = "0";
     }
 
     lastScrollTop = scrollTop;
 
-    // Adding transition for smooth hide/show effect
     header.style.transition = "top 0.5s";
   });
 
-  toggleButton.addEventListener("click", function (event) {
-    event.preventDefault();
-    headerBotVisible = !headerBotVisible;
-    headerBot.style.height = headerBotVisible ? "315px" : "0";
+  const toggleButton = document.querySelector(".header_middle .a");
+  const toggleButtonIcon = toggleButton.querySelector("i");
 
-    // Rotate the toggle button icon 180 degrees
-    toggleButtonIcon.style.transform = headerBotVisible
-      ? "rotate(180deg)"
-      : "rotate(0deg)";
+  toggleButton.addEventListener("click", function () {
+    headerBotVisible = !headerBotVisible;
+    if (headerBotVisible) {
+      headerBot.style.height = "315px";
+      toggleButtonIcon.style.transform = "rotate(180deg)";
+    } else {
+      headerBot.style.height = "0";
+      toggleButtonIcon.style.transform = "rotate(0deg)";
+    }
+
     toggleButtonIcon.style.transition = "transform 0.5s";
+  });
+});
+//header-Mobile------------------------------
+document.addEventListener("DOMContentLoaded", function () {
+  const headerMobile = document.querySelector(".headermobile");
+  let lastScrollTop = 0;
+
+  window.addEventListener("scroll", function () {
+    const scrollTop = document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      headerMobile.style.top = "-50px";
+    } else {
+      headerMobile.style.top = "0";
+    }
+
+    lastScrollTop = scrollTop;
+
+    headerMobile.style.transition = "top 0.5s";
+  });
+});
+//
+const openmenu = document.getElementById("openmenu");
+const menu = document.querySelector(".headermobile .menu");
+const closemenu = document.getElementById("closemenu");
+const headerMobile = document.querySelector(".headermobile ul");
+const body = document.body;
+openmenu.addEventListener("click", function () {
+  menu.style.width = "70%";
+  menu.style.transition = "width 0.3s ease";
+  body.style.background = "rgba(128, 128, 128, 0.235)";
+  headerMobile.style.display = "none";
+});
+closemenu.addEventListener("click", function () {
+  menu.style.width = "0";
+  body.style.background = "white";
+  menu.style.transition = "width 0.3s ease";
+  headerMobile.style.display = "flex";
+});
+
+//
+const banmuondidau = document.querySelector(".menu .menubot .banmuondidau");
+const diadiem = document.querySelectorAll(".menu .menubot .banmuondidau div");
+banmuondidau.addEventListener("click", function () {
+  banmuondidau.style.height = "max-content";
+  diadiem.forEach((diadiem) => {
+    diadiem.style.display = diadiem.style.display === "none" ? "block" : "none";
   });
 });
