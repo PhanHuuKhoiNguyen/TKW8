@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
 .headermobile {
   display: none;
 }
@@ -16,10 +21,6 @@ header {
   opacity: 1;
   transition: opacity 0.7s, transform 0.5s;
   transform: translateY(0);
-}
-a {
-  text-decoration: none;
-  color: black;
 }
 
 .header_top {
@@ -36,11 +37,11 @@ a {
   position: absolute;
 }
 .header_top div h1 {
-  font-size: 40px;
+  font-size: 35px;
 }
 .header_top div:nth-child(1) {
-  width: 10%;
-  left: 2%;
+  width: 16.5%;
+  left: 0%;
   bottom: 15%;
 }
 .header_top div input[type="search"] {
@@ -51,36 +52,37 @@ a {
   font-size: 1rem;
   width: 100%;
   height: 100%;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
   background-color: whitesmoke;
 }
 
 .header_top div:nth-child(2) {
-  width: 45%;
-  left: 17%;
+  width: 43%;
+  left: 18%;
   bottom: 25%;
 }
 .header_top div:nth-child(2) i {
   position: absolute;
-  right: 0;
+  right: 1%;
   bottom: 20%;
-  font-size: 25px;
+  font-size: 20px;
 }
 .header_top div:nth-child(3) {
   width: 20%;
-  left: 65%;
+  left: 62.5%;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 .header_top div:nth-child(3) i {
-  position: absolute;
-  top: 25%;
-  font-size: 40px;
+  font-size: 30px;
   width: auto;
 }
 .header_top div:nth-child(3) span {
   position: absolute;
-  font-size: 20px;
+  font-size: 18px;
   left: 17%;
+  bottom: 20%;
 }
 .header_top div:nth-child(3) span:nth-child(2) {
   opacity: 0.8;
@@ -94,26 +96,32 @@ a {
 
 .header_top a {
   position: absolute;
-  text-decoration: none;
   height: auto;
-  padding: 11px 20px;
+  padding: 11px;
+  width: 100px;
   color: white;
   border-radius: 20px;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #dangky {
   background-color: whitesmoke;
   color: black;
-  right: 12%;
+  right: 12.5%;
+}
+#dangky:hover {
+  background-color: white;
 }
 #dangnhap {
   background-color: #01aa90;
   color: white;
-  right: 4%;
+  right: 2%;
 }
 .header_middle {
   width: 100%;
-  height: 70px;
+  height: 50px;
   position: relative;
   display: flex;
   margin: 0;
@@ -121,6 +129,7 @@ a {
   justify-content: center;
   background-color: white;
   box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
+  align-items: center;
 }
 .header_middle ul {
   display: flex;
@@ -132,12 +141,12 @@ a {
   color: #40a578;
 }
 .header_middle ul li a {
-  font-size: 25px;
+  font-size: 20px;
   display: block;
   border-radius: 20px;
   text-decoration: none;
-  margin: 20px 35px auto;
   color: black;
+  margin: 0 20px;
 }
 .header_middle ul i {
   position: absolute;
@@ -148,15 +157,16 @@ a {
 }
 
 .header_bot {
-  width: 13%;
+  width: 15.5%;
   position: relative;
   height: 0;
-  overflow: hidden;
+  overflow: auto;
   transition: height 0.5s ease;
   background-color: white;
-  left: 35%;
+  left: 33%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-direction: column;
 }
 .header_bot ul li a:hover {
@@ -166,17 +176,19 @@ a {
   list-style: none;
 }
 .header_bot ul li a {
-  font-size: 25px;
-  padding: 15px 0;
+  font-size: 20px;
+  margin: 16px 0;
   display: block;
   text-align: center;
 }
-
+.header_bot ul li a:nth-child(5) {
+  margin-bottom: 0;
+}
 .slider {
-  top: 150px;
+  top: 130px;
   position: relative;
   width: 98%;
-  height: 550px;
+  height: 420px;
   background-color: black;
   left: 1%;
   border-radius: 30px;
@@ -192,9 +204,9 @@ a {
   transition: 1s;
 }
 .slider .list img {
-  width: 98vw;
+  width: 100vw;
   max-width: 100vw;
-  height: 100%;
+  height: 99.5%;
   object-fit: cover;
   opacity: 0.9;
 }
@@ -252,7 +264,7 @@ a {
   width: 30px;
 }
 .slider span {
-  font-size: 60px;
+  font-size: 50px;
   transform: scaleX(0.8);
   font-weight: bold;
   position: absolute;
@@ -261,12 +273,12 @@ a {
   left: 50%;
 }
 .slider .span1 {
-  top: 30%;
+  top: 20%;
   left: 18%;
 }
 .slider .span2 {
-  left: 16%;
-  top: 42%;
+  left: 15%;
+  top: 32%;
 }
 .slider .search {
   position: absolute;
@@ -275,7 +287,7 @@ a {
   background-color: white;
   z-index: 3;
   left: 20%;
-  top: 60%;
+  top: 55%;
   border-radius: 60px;
   display: flex;
   align-items: center;
@@ -283,13 +295,11 @@ a {
 .slider .search i {
   position: absolute;
   font-size: 15px;
-  right: 5%;
-  top: 50%;
 }
 .slider .search div {
   position: relative;
   width: 45%;
-  height: 50%;
+  height: 55%;
 }
 .slider .search div:nth-child(1) {
   left: 2%;
@@ -299,8 +309,8 @@ a {
   margin-left: 5%;
 }
 .slider .search div i {
-  left: 0%;
-  top: 20%;
+  left: 0;
+  top: 10%;
   font-size: 25px;
   align-items: center;
   opacity: 0.7;
@@ -308,81 +318,88 @@ a {
 .slider .search div p {
   position: absolute;
   top: 0;
-  left: 9%;
-  font-size: 17px;
+  left: 12%;
+  font-size: 15px;
 }
 .slider .search div select {
   position: absolute;
   border: none;
   outline: none;
-  left: 9%;
+  left: 12%;
   bottom: 0;
-  font-size: 17px;
+  font-size: 14px;
   padding-right: 10px;
   appearance: none;
   cursor: pointer;
   opacity: 0.7;
 }
 .slider .search #timkiem {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   font-size: 20px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 20%;
+  top: 15%;
   right: 3%;
   color: whitesmoke;
   background-color: #01aa90;
-  cursor: pointer;
 }
+
 .diemden {
-  margin-top: 13%;
+  margin-top: 20%;
   width: 100%;
-  height: 550px;
-  position: relative;
-  overflow: hidden;
+  max-width: 100%;
+  height: 500px;
 }
+
 h1 {
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
   margin-bottom: 3%;
   transform: scaleX(0.9);
 }
-.diemden ul {
-  height: 80%;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-.diemden ul li {
-  width: 16%;
-  margin: 1%;
-}
-.diemden img {
+
+.scroll-container {
+  overflow-x: auto;
+  overflow-y: hidden;
   width: 100%;
-  height: 100%;
-  border-radius: 50% /45%;
-}
-.diemden img:hover {
-  border: 4px solid #01aa90;
-}
-.diemden ul li h2 {
-  text-align: center;
-  margin-top: 5%;
-  font-size: 30px;
-  transform: scaleX(0.9);
-  opacity: 0.8;
-}
-.diemden ul li p {
-  display: block;
-  text-align: center;
-  font-size: 20px;
-  opacity: 0.7;
-  margin-top: 5px;
+  padding-bottom: 30px;
 }
 
+.diemden ul {
+  list-style: none;
+  display: flex;
+
+  padding: 0;
+  margin: 0;
+}
+
+.diemden ul li {
+  text-align: center;
+}
+
+.diemden ul li img {
+  width: 280px;
+  height: 300px;
+  border-radius: 50% /45%;
+  margin: 20px;
+}
+
+.diemden img:hover {
+  border: 3px solid #01aa90;
+}
+.khampha {
+  margin-top: 100px;
+}
+
+.dichvu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px 0;
+  margin: 0 auto;
+}
 .dichvu p {
   font-size: 20px;
   margin: 10px;
@@ -505,22 +522,23 @@ h1 {
 .btn:hover {
   color: var(--color2);
 }
+
 .gioithieu {
   position: relative;
   width: 100%;
-  height: 1000px;
+  height: 900px;
   background-color: #b4f8e457;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 .gioithieu img {
-  width: 60%;
-  height: 15%;
+  width: 66%;
+  height: 10%;
   height: cover;
   object-fit: cover;
   position: absolute;
   top: 20%;
   color: #8a8b8b57;
-  left: 20%;
+  left: 17%;
 }
 .gioithieu h1 {
   padding-top: 20px;
@@ -533,10 +551,7 @@ h1 {
   opacity: 0.6;
   margin-top: 20px;
 }
-.gioithieu .icon-item p {
-  font-size: 16px;
-  margin-top: 2%;
-}
+
 .gioithieu i {
   font-size: 30px;
   color: #01aa90;
@@ -545,7 +560,10 @@ h1 {
   position: absolute;
   width: 30%;
   height: max-content;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .gioithieu .icon-item div:hover {
   background-color: #01aa90;
@@ -557,22 +575,21 @@ h1 {
 }
 
 .gioithieu .icon-item:nth-child(1) {
-  top: 22%;
-  left: 5%;
+  top: 20%;
+  left: 0%;
 }
 .gioithieu .icon-item:nth-child(2) {
-  top: 26%;
+  top: 24%;
   left: 35.5%;
 }
 .gioithieu .icon-item:nth-child(3) {
-  top: 22%;
-  right: 5%;
+  top: 20%;
+  right: 0%;
 }
 .gioithieu .icon-item div {
   position: relative;
-  left: 42%;
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   margin-bottom: 2%;
   background-color: white;
   display: flex;
@@ -580,11 +597,14 @@ h1 {
   align-items: center;
   border-radius: 50%;
 }
+.gioithieu .icon-item p {
+  font-size: 18px;
+  margin-top: 2%;
+  line-height: 20px;
+}
 
 .gioithieu .icon-item span {
-  text-align: center;
-  display: block;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bold;
   opacity: 0.9;
 }
@@ -593,8 +613,8 @@ h1 {
   position: absolute;
   border-radius: 25px;
   top: 50%;
-  left: 11%;
-  width: 18%;
+  left: 5%;
+  width: 25%;
   height: 35%;
   object-fit: cover;
 }
@@ -602,19 +622,19 @@ h1 {
   position: absolute;
   border-radius: 25px;
   top: 50%;
-  left: 30%;
+  left: 31.5%;
   object-fit: cover;
   height: 35%;
-  width: 29%;
+  width: 32%;
 }
 .gioithieu .banner3 {
   position: absolute;
   border-radius: 25px;
   top: 50%;
-  left: 60%;
+  left: 65%;
   object-fit: cover;
   height: 35%;
-  width: 29%;
+  width: 32%;
 }
 .info {
   position: relative;
@@ -630,13 +650,6 @@ h1 {
   position: relative;
 }
 
-.info .left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .info .left div {
   position: absolute;
   border-radius: 50%;
@@ -650,7 +663,7 @@ h1 {
 
 .info .left div:nth-child(1) {
   top: 20%;
-  left: 28%;
+  left: 5%;
   width: 180px;
   height: 180px;
 }
@@ -670,7 +683,7 @@ h1 {
   width: 120px;
   height: 120px;
   top: 65%;
-  left: 39%;
+  left: 20%;
 }
 
 .info .left div:nth-child(2) span:nth-child(1) {
@@ -702,9 +715,6 @@ h1 {
   opacity: 0.6;
 }
 
-.info .right {
-}
-
 .info .right h2 {
   margin-top: 100px;
   font-size: 38px;
@@ -718,7 +728,7 @@ h1 {
 
 .info .right p {
   margin-top: 20px;
-  width: 600px;
+  width: 450px;
   line-height: 1.5rem;
   font-size: 18px;
   opacity: 0.5;
@@ -727,7 +737,7 @@ h1 {
 
 .info .right a {
   position: absolute;
-  top: 80%;
+  top: 82%;
   text-decoration: none;
   padding: 11px 20px;
   color: white;
@@ -748,8 +758,8 @@ h1 {
   height: 95%;
 }
 .info .bottom h1 {
-  margin-top: 90px;
-  font-size: 42px;
+  margin-top: 100px;
+  font-size: 35px;
   opacity: 0.9;
 }
 .info .bottom input {
@@ -780,6 +790,7 @@ h1 {
 }
 
 .footer {
+  margin-top: 50px;
   background-color: #b4f8e457;
   width: 100%;
   height: 400px;
@@ -793,13 +804,13 @@ h1 {
   width: 20%;
 }
 .footer .row .column:first-child {
-  left: 15%;
+  left: 5%;
 }
 .footer .row .column:nth-child(2) {
   left: 43%;
 }
 .footer .row .column:nth-child(3) {
-  right: 15%;
+  right: 5%;
 }
 
 .footer .desc {
