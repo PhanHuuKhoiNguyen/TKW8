@@ -5,7 +5,7 @@
 }
 body {
   background-color: #01aa90;
-  background: linear-gradient(to right, #e2e2e2, #01aa919c);
+  background: linear-gradient(to right, #e2e2e2, #01aa9175);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,15 +37,12 @@ body {
   font-size: 15px;
   margin: 15px 0 10px;
 }
-.container a:hover {
-  color: black;
-}
 .container button {
   background-color: #01aa90;
   color: #fff;
   font-size: 12px;
   padding: 10px 45px;
-  border: none;
+  border: 1px solid black;
   border-radius: 8px;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -56,10 +53,6 @@ body {
 .container button.hidden {
   background-color: transparent;
   border-color: #fff;
-  border: 1px solid #fff;
-}
-.container button.hidden:hover {
-  box-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
 }
 .container form {
   background-color: #fff;
