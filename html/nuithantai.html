@@ -4,7 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./../css/nuithantai.css" />
+    <link
+      rel="stylesheet"
+      href="./../css/nuithantai-mobile.css"
+      media="(max-width: 700px)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./../css/nuithantai-tablet.css"
+      media="(min-width: 701px) and (max-width: 1024px)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./../css/nuithantai.css"
+      media="(min-width: 1025px)"
+    />
     <link rel="shortcut icon" type="" href="./img/icons8-tourism-20.png" />
     <link
       rel="stylesheet"
@@ -33,7 +49,9 @@
             <a href="./Home_page.html">Trang chủ </a>
           </li>
           <li>
-            <a class="a" href="#!">Bạn muốn đi đâu<i class="fa-solid fa-chevron-up"></i></a>
+            <a class="a" href="#!"
+              >Bạn muốn đi đâu<i class="fa-solid fa-chevron-up"></i
+            ></a>
           </li>
           <li>
             <a href="./../html/gioithieu.html">Giới thiệu </a>
@@ -44,9 +62,6 @@
           <li>
             <a href="./../html/lienhe.html">Liên hệ </a>
           </li>
-          <li>
-            <a href="">Khách sạn </a>
-          </li>
         </ul>
       </div>
       <div class="header_bot">
@@ -56,8 +71,34 @@
           <li><a href="./nguhanhson.html">Ngũ Hành Sơn</a></li>
           <li><a href="./nuithantai.html">Núi thần tài</a></li>
           <li><a href="./hoian.html">Hội An</a></li>
-          
         </ul>
+      </div>
+    </header>
+    <header class="headermobile">
+      <ul>
+        <li><i id="openmenu" class="fa-solid fa-bars"></i></li>
+        <li><h2>TRAVELS</h2></li>
+        <li><a href="./login-form.html" id="dangnhap">Đăng nhập</a></li>
+      </ul>
+      <div class="menu">
+        <div class="menutop">
+          <h1>Danh mục</h1>
+          <i id="closemenu" class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="menubot">
+          <div><a href="./Home_page.html">Trang chủ</a></div>
+          <div class="banmuondidau">
+            <a href="#!">Bạn muốn đi đâu</a>
+            <div><a href="./banahills.html">Bà Nà Hills</a></div>
+            <div><a href="./bandaosontra.html">Bán Đảo Sơn Trà</a></div>
+            <div><a href="./nguhanhson.html">Ngũ Hành Sơn</a></div>
+            <div><a href="./nuithantai.html">Núi Thần Tài</a></div>
+            <div><a href="./hoian.html">Hội An</a></div>
+          </div>
+          <div><a href="./gioithieu.html">Giới thiệu</a></div>
+          <div><a href="./blog.html">Blog</a></div>
+          <div><a href="./lienhe.html">Liên hệ</a></div>
+        </div>
       </div>
     </header>
     <div class="anh">
@@ -74,7 +115,10 @@
 
         <a href=""><u>Xem thêm</u> </a>
         <i id="triangle" class="fa-solid fa-caret-left"></i>
-        <span class="span3">Thời gian tuyệt nhất để đến</span>
+        <span class="span3"
+          >Thời gian tuyệt nhất <br />
+          để đến</span
+        >
         <span class="span4">Thời lượng lý tưởng</span>
         <span class="span5">THG 2</span>
         <span class="span6">3 ngày</span>
@@ -150,7 +194,7 @@
         </p>
       </div>
     </div>
-    <div class="h1" id="h1"><h1>8 hoạt động ở Sun World Bà Nà Hills</h1></div>
+    <h1 class="h1">8 hoạt động ở Sun World Bà Nà Hills</h1>
     <div class="dichvu">
       <div>
         <img src="./../img/Núi thần tài/14934312475544 (1).jpg" alt="" />
@@ -164,7 +208,10 @@
         <button class="btn">Mua ngay</button>
       </div>
       <div>
-        <img src="./../img/Núi thần tài/cong-vien-nuoc-nui-than-tai-4.jpg" alt="" />
+        <img
+          src="./../img/Núi thần tài/cong-vien-nuoc-nui-than-tai-4.jpg"
+          alt=""
+        />
         <p>Tour Núi thần tài 1 ngày từ Đà Nẵng</p>
         <span>Bán chạy</span><span>Hướng dẫn tiếng việt</span>
         <p>
@@ -200,7 +247,10 @@
         <button class="btn">Mua ngay</button>
       </div>
       <div>
-        <img src="./../img/Núi thần tài/danang_tam-onsen-nui-than-tai.jpg" alt="" />
+        <img
+          src="./../img/Núi thần tài/danang_tam-onsen-nui-than-tai.jpg"
+          alt=""
+        />
         <p>Tour Ngày Tùy Chọn Tham Quan Núi thần tài Đà Nẵng</p>
         <span>Bán chạy</span><span>Hoàn tiền dễ dàng</span>
         <p>
@@ -246,7 +296,7 @@
         <button class="btn">Mua ngay</button>
       </div>
     </div>
-    <div class="h1"><h1>Top điểm du lịch Sun World Ba Na Hills</h1></div>
+    <h1>Top điểm du lịch Sun World Ba Na Hills</h1>
     <div class="diadiemdulich">
       <div>
         <img src="./../img/Núi thần tài/dongsongtinhyeu.jpg" alt="" />
@@ -312,7 +362,7 @@
         <a href="">Khám phá <i class="fa-solid fa-chevron-right"></i> </a>
       </div>
     </div>
-    <div class="h1"><h1>Đánh giá của khách hàng</h1></div>
+    <h1>Đánh giá của khách hàng</h1>
     <div class="feedback">
       <div class="list-feedback">
         <div class="item">
@@ -341,7 +391,7 @@
             <p>
               Đánh giá cho: <a href="">Tour Bà Nà Hills 1 Ngày Từ Đà Nẵng</a>
             </p>
-            <p>Người dùng Klook Đăng 7 ngày trước</p>
+            <p>Người dùng TRAVLES Đăng 7 ngày trước</p>
             <p>
               Những ngọn đồi thật tuyệt vời! Có quá nhiều việc phải làm trong
               thời gian ngắn như vậy. Nơi tuyệt vời và cũng đáng để ghé thăm.
@@ -373,7 +423,7 @@
             ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
             ><i class="fa-solid fa-star"></i>
             <p>Đánh giá cho: <a href="">Tour Ngày Sun World Bà Nà Hills</a></p>
-            <p>Người dùng Klook Đăng 7 ngày trước</p>
+            <p>Người dùng TRAVLES Đăng 7 ngày trước</p>
             <p>
               Hướng dẫn viên Long của chúng tôi thật tuyệt vời, anh ấy có kinh
               nghiệm và đưa chúng tôi di chuyển để tránh đám đông. Hành trình
@@ -411,7 +461,7 @@
                 >Private Check-out Tour:Bà Nà Hills,Da Nang Airport Drop-off</a
               >
             </p>
-            <p>Người dùng Klook Đăng 40 ngày trước</p>
+            <p>Người dùng TRAVLES Đăng 40 ngày trước</p>
             <p>
               Buổi sáng đón khách suôn sẻ,không cần lo lắng về hành lý, ra vào
               thuận tiện vì tôi đã nhận được vé điện tử đi Bà Nà Hills,dịch vụ
@@ -426,16 +476,132 @@
         <button class="next1"><i class="fa-solid fa-chevron-right"></i></button>
       </div>
     </div>
-    <div class="h1"><h1>Xu hướng</h1></div>
+    <div class="feedback-mobile">
+      <div class="list-feedback">
+        <div class="item">
+          <div>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+            <p>
+              Đánh giá cho:
+              <a href="">Tour Ngày Tham Quan Bà Nà Hills Từ Đà Nẵng</a>
+            </p>
+            <p>Angielou ****** Đăng 11 ngày trước</p>
+            <p>
+              Hành trình tốt. Xe bán tải gọn gàng. Hướng dẫn viên du lịch, ông
+              Chai, rất lôi cuốn, xen vào đó là những câu chuyện cười. Anh ấy đã
+              cố gắng hết sức để tập hợp và phân nhóm mọi người, nhưng mỗi nhóm
+              nên làm theo hướng dẫn và đi cùng nhóm. Món quà lưu niệm của anh
+              vào cuối chuyến đi thật bất ngờ. Nhìn chung, đáng đồng tiền bát
+              gạo.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+            <p>
+              Đánh giá cho: <a href="">Tour Bà Nà Hills 1 Ngày Từ Đà Nẵng</a>
+            </p>
+            <p>Người dùng TRAVELS Đăng 7 ngày trước</p>
+            <p>
+              Những ngọn đồi thật tuyệt vời! Có quá nhiều việc phải làm trong
+              thời gian ngắn như vậy. Nơi tuyệt vời và cũng đáng để ghé thăm.
+              Chúng tôi đã đặt một chuyến du lịch riêng với hy vọng tối đa hóa
+              thời gian cho 3 đứa con của mình. Có vẻ hơi vội vã khi vượt qua
+              mọi thứ nhưng nơi này quá lớn nên phải mất một thời gian để đi
+              lại. Thật không may, hướng dẫn của chúng tôi không thú vị như
+              chúng tôi mong đợi. Có lẽ việc đặt phòng cần hiển thị độ tuổi của
+              khách vì cô ấy dự kiến sẽ có 4 người lớn và 1 trẻ em thay vì 2
+              người lớn và 3 trẻ em. Hướng dẫn của chúng tôi không quá hướng
+              ngoại và không cung cấp nhiều chi tiết khi chúng tôi hỏi các lựa
+              chọn của chúng tôi là gì. Chúng tôi hy vọng cô ấy sẽ có thêm thông
+              tin dựa trên kinh nghiệm của mình nhưng dường như cô ấy còn thiếu
+              kiến thức. Tốt hơn hết là chúng ta nên đi tham quan theo nhóm nhỏ
+              và được tự mình đi dạo xung quanh. Chúng tôi đã chọn mua bữa trưa
+              cho riêng mình và đây là một lựa chọn tốt cho chúng tôi vì chúng
+              tôi không cần tiệc buffet. Việc chuyển giao tư nhân cũng tốt nhưng
+              một phương tiện chung cũng sẽ ổn ở Đà Nẵng. Nếu bạn chưa quyết
+              định tham gia một chuyến du lịch riêng, tôi sẽ khuyên bạn nên đi
+              cùng một nhóm nhỏ. Dù sao đi nữa, chuyến thăm thật tuyệt vời và
+              bọn trẻ đã vui vẻ và chúng tôi đã thấy những gì chúng tôi muốn
+              thấy.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+            <p>Đánh giá cho: <a href="">Tour Ngày Sun World Bà Nà Hills</a></p>
+            <p>Người dùng TRAVELS Đăng 7 ngày trước</p>
+            <p>
+              Hướng dẫn viên Long của chúng tôi thật tuyệt vời, anh ấy có kinh
+              nghiệm và đưa chúng tôi di chuyển để tránh đám đông. Hành trình
+              thực sự có giá trị đồng tiền. Giải thích dài dòng và lập kế hoạch
+              vượt xa sự mong đợi của chúng tôi! Nhóm 9 người của chúng tôi thực
+              sự thích thú. Cảm ơn
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+            <p>
+              Đánh giá cho: <a href="">Tour Bà Nà Hills 1 Ngày Từ Đà Nẵng</a>
+            </p>
+            <p>Cleopatra ****** Đăng 58 ngày trước</p>
+            <p>
+              Bà Nà Hills đẹp mê hồn. Nơi này rất rộng lớn và là một nơi huyền
+              diệu như Disneyland và tôi thực sự đã yêu. Tôi không nghĩ chúng
+              tôi đã khám phá mọi nơi vì chúng tôi chỉ dành một ngày. Lời khuyên
+              của mình là nên đi xe riêng để có nhiều thời gian rảnh. Phong cảnh
+              rất đẹp và may mắn là thời tiết tốt nên chúng tôi đã chụp được rất
+              nhiều ảnh. Chắc chắn đáng để ghé thăm và rất khuyến khích khi bạn
+              ghé thăm Đà Nẵng.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+            <p>
+              Đánh giá cho:<a href=""
+                >Private Check-out Tour:Bà Nà Hills,Da Nang Airport Drop-off</a
+              >
+            </p>
+            <p>Người dùng TRAVELS Đăng 40 ngày trước</p>
+            <p>
+              Buổi sáng đón khách suôn sẻ,không cần lo lắng về hành lý, ra vào
+              thuận tiện vì tôi đã nhận được vé điện tử đi Bà Nà Hills,dịch vụ
+              mát-xa tốt, bữa tối là bữa ăn Việt Nam tự nấu và tôi cũng rất
+              thích bia.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="buttonss">
+        <button class="prev1"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="next1"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+    <h1 class="h1xuhuong">Xu hướng</h1>
     <div class="xuhuong">
       <div class="slider-img">
         <div class="list-item">
           <div class="item">
             <div class="item1">
-              <img
-                src="./../img/banahill/ba-na-1hills.jpg"
-                alt=""
-              /><a>Bà Nà Hills</a>
+              <img src="./../img/banahill/ba-na-1hills.jpg" alt="" /><a
+                >Bà Nà Hills</a
+              >
             </div>
             <div class="item2">
               <img src="./../img/ban-dao-son-tra-3-1024x550.webp" alt="" /><a
@@ -473,117 +639,167 @@
       <a href="#!" class="xemthem"><u>Xem thêm</u></a>
       <a href="#!" class="xemithon"><u>Xem ít hơn</u></a>
     </div>
-    <div class="h1"><h1>Những câu hỏi phổ biến về Bà Nà Hills</h1></div>        
-        
-          <div class="thongtin">
-            <div>
-              <h2>Núi thần tài ở đâu?</h2>
-               <i id="up" class="fa-solid fa-chevron-up"></i>
-              <i id="down" class="fa-solid fa-chevron-down"></i>
-              <p>Bán Đảo Sơn Trà là một bán đảo nằm ở phường Thọ Quang, quận Sơn Trà, phía bắc thành phố Đà Nẵng, tỉnh Quảng Nam, miền Trung Việt Nam. Bản Đảo này nằm giữa biển Đông và thành phố Đà Nẵng, tạo ra một vùng đất nằm ngay tại cửa ngõ biển của thành phố.</p>
-            </div>
-            <div>
-              <h2>Cách di chuyển đến Núi thần tài từ Đà Nẵng?</h2>
-               <i id="up" class="fa-solid fa-chevron-up"></i>
-              <i id="down" class="fa-solid fa-chevron-down"></i>
-              <p>Bán đảo Sơn Trà nằm ở phía đông bắc thành phố Đà Nẵng, cách trung tâm thành phố khoảng 10 kilomét. Bạn có thể đến Bán Đảo Sơn Trà bằng xe ô tô hoặc xe máy từ trung tâm thành phố Đà Nẵng. Khi chọn các tour du lịch bán đảo Sơn Trà trên Klook, bạn sẽ được cung cấp dịch vụ đưa đón miễn phí từ khách sạn đến đảo. Tham khảo thêm thông tin ở mục “Chi tiết gói dịch vụ” của các tour bên trên.</p>
-            </div>
-            <div>
-              <h2>Tham quan Núi thần tài mùa nào đẹp nhất?</h2>
-               <i id="up" class="fa-solid fa-chevron-up"></i>
-              <i id="down" class="fa-solid fa-chevron-down"></i>
-              <p>Thời gian lý tưởng để đi du lịch đảo Sơn Trà là vào mùa khô, khoảng từ tháng 2 đến tháng 8. Lúc này thời tiết khô ráo, tạo điều kiện thuận lợi cho việc di chuyển và tham quan đảo. Tuy nhiên, tránh thời gian từ tháng 10 đến tháng 11, khi bão có thể ảnh hưởng đến kỳ nghỉ của bạn. Đảm bảo kiểm tra dự báo thời tiết trước khi bạn đến để có một trải nghiệm tốt nhất tại Núi Sơn Trà.</p>
-            </div>
-            <div>
-              <h2>Ăn gì ở Núi thần tài?</h2>
-               <i id="up" class="fa-solid fa-chevron-up"></i>
-              <i id="down" class="fa-solid fa-chevron-down"></i>
-              <p>Bán đảo Sơn Trà ở Đà Nẵng nổi tiếng với ẩm thực phong phú như hải sản tươi ngon và đa dạng như tôm hùm, tôm sú, cá mú, bạch tuộc, cá lá, cua, ghẹ, cá chình. Ngoài ra, du khách cũng có thể thưởng thức thịt thú rừng và các loại rau rừng tự nhiên tại đảo. Một đặc sản khác của Núi Sơn Trà là rượu dừa, được làm từ nếp cái và men ủ trong trái dừa nhỏ, giữ nguyên được vị thanh ngọt dễ chịu của nước dừa.</p>
-            </div>
-            <div>
-              <h2>Cần chuẩn bị những gì cho chuyến du lịch Núi thần tài?</h2>
-               <i id="up" class="fa-solid fa-chevron-up"></i>
-              <i id="down" class="fa-solid fa-chevron-down"></i>
-              <p>Bạn nên chuẩn bị quần áo thoải mái và phù hợp thời tiết, mũ, kính râm, kem chống nắng, thuốc cá nhân và đồ bơi nếu bạn muốn tham gia chèo kayak hoặc tắm biển. Vì nhiều nơi ở đây không chấp nhận thanh toán bằng thẻ, bạn nên cầm theo một ít tiền mặt cho các chi phí cá nhân như mua sắm hoặc tham gia các trò chơi ngoài. *Đừng quên lưu voucher đặt tour hay hoạt động trên điện thoại và mang giấy tờ cá nhân như CCCD để tham gia.</p>
-            </div>
-          </div>
-          
-          </div>
-          <div class="khampha">
-            <h1>Khám phá thêm trên Klook</h1>
-            <p>Những trải nghiệm gần Đà nẵng</p>
-           <ul class="list1">
-            <li><a href="" class="a1">Suối Thần Tài</a></li>
-            <li><a href="">Bảo Tàng Chăm</a></li>
-            <li><a href="">Nam Ô</a></li>
-            <li><a href="">Cù Lao Chàm</a></li>
-            <li><a href="">Suối nước nóng Đà Nẵng</a></li>
-            <li><a href="/html/nguhanhson.html">Ngũ Hành Sơn</a></li>
-            <li><a href="">Mikazuki</a></li>
-            <li><a class="alast" href="">Chợ Hàn </a></li>
-           </ul>
-          </div>
-          <footer class="footer">
-          <div class="main-content">
-            <div class="row">
-              <!-- column1 -->
-              <div class="column">
-                <h3>Logo</h3>
-                <p class="desc">Need to help for your dream Career? trust us.With lesson,study becomes a lot easier with us.</p>
-                <div class="social">
-                  <ul>
-                    <li style="--clr:#ff0050;">
-                      <a href="#">
-                        <i class="fa-brands fa-tiktok"></i>
-                      </a> 
-                    </li>
-                    <li style="--clr:#1877F2">
-                     <a href="#!">
+    <h1>Những câu hỏi phổ biến về Núi Thần Tài</h1>
+
+    <div class="thongtin">
+      <div>
+        <h2>Núi Thần Tài thành phố Đà Nẵng ở đâu ?</h2>
+        <i id="up" class="fa-solid fa-chevron-up"></i>
+        <i id="down" class="fa-solid fa-chevron-down"></i>
+        <p>
+          Bán Đảo Sơn Trà là một bán đảo nằm ở phường Thọ Quang, quận Sơn Trà,
+          phía bắc thành phố Đà Nẵng, tỉnh Quảng Nam, miền Trung Việt Nam. Bản
+          Đảo này nằm giữa biển Đông và thành phố Đà Nẵng, tạo ra một vùng đất
+          nằm ngay tại cửa ngõ biển của thành phố.
+        </p>
+      </div>
+      <div>
+        <h2>Cách di chuyển đến Núi thần tài từ Đà Nẵng?</h2>
+        <i id="up" class="fa-solid fa-chevron-up"></i>
+        <i id="down" class="fa-solid fa-chevron-down"></i>
+        <p>
+          Bán đảo Sơn Trà nằm ở phía đông bắc thành phố Đà Nẵng, cách trung tâm
+          thành phố khoảng 10 kilomét. Bạn có thể đến Bán Đảo Sơn Trà bằng xe ô
+          tô hoặc xe máy từ trung tâm thành phố Đà Nẵng. Khi chọn các tour du
+          lịch bán đảo Sơn Trà trên TRAVLES, bạn sẽ được cung cấp dịch vụ đưa
+          đón miễn phí từ khách sạn đến đảo. Tham khảo thêm thông tin ở mục “Chi
+          tiết gói dịch vụ” của các tour bên trên.
+        </p>
+      </div>
+      <div>
+        <h2>Tham quan Núi thần tài mùa nào đẹp nhất?</h2>
+        <i id="up" class="fa-solid fa-chevron-up"></i>
+        <i id="down" class="fa-solid fa-chevron-down"></i>
+        <p>
+          Thời gian lý tưởng để đi du lịch đảo Sơn Trà là vào mùa khô, khoảng từ
+          tháng 2 đến tháng 8. Lúc này thời tiết khô ráo, tạo điều kiện thuận
+          lợi cho việc di chuyển và tham quan đảo. Tuy nhiên, tránh thời gian từ
+          tháng 10 đến tháng 11, khi bão có thể ảnh hưởng đến kỳ nghỉ của bạn.
+          Đảm bảo kiểm tra dự báo thời tiết trước khi bạn đến để có một trải
+          nghiệm tốt nhất tại Núi Sơn Trà.
+        </p>
+      </div>
+      <div>
+        <h2>Ăn gì ở Núi thần tài thành phố Đà Nẵng?</h2>
+        <i id="up" class="fa-solid fa-chevron-up"></i>
+        <i id="down" class="fa-solid fa-chevron-down"></i>
+        <p>
+          Bán đảo Sơn Trà ở Đà Nẵng nổi tiếng với ẩm thực phong phú như hải sản
+          tươi ngon và đa dạng như tôm hùm, tôm sú, cá mú, bạch tuộc, cá lá,
+          cua, ghẹ, cá chình. Ngoài ra, du khách cũng có thể thưởng thức thịt
+          thú rừng và các loại rau rừng tự nhiên tại đảo. Một đặc sản khác của
+          Núi Sơn Trà là rượu dừa, được làm từ nếp cái và men ủ trong trái dừa
+          nhỏ, giữ nguyên được vị thanh ngọt dễ chịu của nước dừa.
+        </p>
+      </div>
+      <div>
+        <h2>Cần chuẩn bị những gì cho chuyến du lịch Núi thần tài?</h2>
+        <i id="up" class="fa-solid fa-chevron-up"></i>
+        <i id="down" class="fa-solid fa-chevron-down"></i>
+        <p>
+          Bạn nên chuẩn bị quần áo thoải mái và phù hợp thời tiết, mũ, kính râm,
+          kem chống nắng, thuốc cá nhân và đồ bơi nếu bạn muốn tham gia chèo
+          kayak hoặc tắm biển. Vì nhiều nơi ở đây không chấp nhận thanh toán
+          bằng thẻ, bạn nên cầm theo một ít tiền mặt cho các chi phí cá nhân như
+          mua sắm hoặc tham gia các trò chơi ngoài. *Đừng quên lưu voucher đặt
+          tour hay hoạt động trên điện thoại và mang giấy tờ cá nhân như CCCD để
+          tham gia.
+        </p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="row">
+        <!-- column1 -->
+        <div class="column">
+          <h3>TRAVELS</h3>
+          <ul class="list">
+            <li>
+              <strong>Location:</strong
+              ><span>470 Đ. Trần Đại Nghĩa Ngũ Hành Sơn Đà Nẵng,Việt Nam</span>
+            </li>
+            <li>
+              <strong>Email:</strong><span>nguyenphk.23itb@vku.udn.vn</span>
+            </li>
+            <li><strong>Phone:</strong><span>0879636334</span></li>
+            <li>
+              <h3>Kết nối với chúng tôi</h3>
+              <div class="social">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
                       <i class="fa-brands fa-facebook"></i>
-                     </a>
-                    </li>
-                    <li style="--clr: #E4405F">
+                    </a>
+                  </li>
+                  <li>
                     <a href="#!">
                       <i class="fa-brands fa-instagram"></i>
                     </a>
                   </li>
-                  <li style="--clr:#333333">  
+                  <li>
                     <a href="#!">
                       <i class="fa-brands fa-github"></i>
                     </a>
                   </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="column">
-                <!-- column2 -->
-                <h3 class="tittle">Company</h3>
-                <ul class="list">
-                  <li><a href="#!">About Us</a></li>
-                  <li><a href="#!">Features</a></li>
-                  <li><a href="#!">Our Pricing</a></li>
-                  <li><a href="#!">Latest News</a></li>
                 </ul>
               </div>
-              <!-- column3 -->
-              <div class="column">
-                <h3 class="tittle">Address</h3>
-                <ul class="list">
-                <li>
-                <strong>Location:</strong><span>470 Đ. Trần Đại Nghĩa Ngũ Hành Sơn Đà Nẵng,Việt Nam</span>
-                </li>
-                <li>
-                  <strong>Email:</strong><span>nguyenphk.23itb@vku.udn.vn</span>
-                </li>
-                <li>
-                  <strong>Phone:</strong><span>0879636334</span>
-                </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          </footer>
-
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <!-- column2 -->
+          <h3 class="tittle">Về chúng tôi</h3>
+          <ul class="list">
+            <li>
+              <a href="#!"
+                ><i class="fa-solid fa-angle-right"></i>Sản phẩm nổi bật</a
+              >
+            </li>
+            <li>
+              <a href="#!"
+                ><i class="fa-solid fa-angle-right"></i>Sản phẩm khuyến mãi</a
+              >
+            </li>
+            <li>
+              <a href="#!"
+                ><i class="fa-solid fa-angle-right"></i>Tất cả sản phẩm</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- column3 -->
+        <div class="column">
+          <h3 class="tittle">Chính sách dịch vụ</h3>
+          <ul class="list">
+            <li>
+              <a href="#!"><i class="fa-solid fa-angle-right"></i>Trang chủ </a>
+            </li>
+            <li>
+              <a href="#!"
+                ><i class="fa-solid fa-angle-right"></i>Bạn muốn đi đâu</a
+              >
+            </li>
+            <li>
+              <a href="#!"><i class="fa-solid fa-angle-right"></i>Giới thiệu</a>
+            </li>
+            <li>
+              <a href="#!"><i class="fa-solid fa-angle-right"></i>Blogs</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-angle-right"></i>Liên hệ</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-angle-right"></i>Khách sạn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <script src="./../js/nuithantai.js"></script>
   </body>
