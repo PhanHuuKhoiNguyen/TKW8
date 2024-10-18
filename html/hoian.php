@@ -4,116 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="./../css/nuithantai-mobile.css"
-      media="(max-width: 700px)"
-    />
-
-    <link
-      rel="stylesheet"
-      href="./../css/nuithantai-tablet.css"
-      media="(min-width: 701px) and (max-width: 1024px)"
-    />
-
-    <link
-      rel="stylesheet"
-      href="./../css/nuithantai.css"
-      media="(min-width: 1025px)"
-    />
     <link rel="shortcut icon" type="" href="./img/icons8-tourism-20.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="./../css/hoian-mobile.css"
+      media="(max-width: 700px)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./../css/hoian-tablet.css"
+      media="(min-width: 701px) and (max-width: 1024px)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./../css/hoian.css"
+      media="(min-width: 1025px)"
+    />
   </head>
   <body>
-    <header>
-      <div class="header_top">
-        <div><h1>TRAVELS</h1></div>
-        <div>
-          <input type="search" name="" id="searchInput" placeholder="" /><i
-            class="fa-solid fa-magnifying-glass"
-          ></i>
-        </div>
-        <div>
-          <i class="fa-solid fa-phone-volume"></i>
-          <span>Hotline</span><span>08796366334</span>
-        </div>
-        <a href="./signup.html" id="dangky">Đăng ký</a>
-        <a href="./login-form.html" id="dangnhap">Đăng nhập</a>
-      </div>
-      <div class="header_middle">
-        <ul>
-          <li>
-            <a href="./Home_page.html">Trang chủ </a>
-          </li>
-          <li>
-            <a class="a" href="#!"
-              >Bạn muốn đi đâu<i class="fa-solid fa-chevron-up"></i
-            ></a>
-          </li>
-          <li>
-            <a href="./../html/gioithieu.html">Giới thiệu </a>
-          </li>
-          <li>
-            <a href="./../html/blog.html">Blog </a>
-          </li>
-          <li>
-            <a href="./../html/lienhe.html">Liên hệ </a>
-          </li>
-        </ul>
-      </div>
-      <div class="header_bot">
-        <ul>
-          <li><a href="./banahills.html">Bà Nà Hills</a></li>
-          <li><a href="./bandaosontra.html">Bán đảo Sơn Trà</a></li>
-          <li><a href="./nguhanhson.html">Ngũ Hành Sơn</a></li>
-          <li><a href="./nuithantai.html">Núi thần tài</a></li>
-          <li><a href="./hoian.html">Hội An</a></li>
-        </ul>
-      </div>
-    </header>
-    <header class="headermobile">
-      <ul>
-        <li><i id="openmenu" class="fa-solid fa-bars"></i></li>
-        <li><h2>TRAVELS</h2></li>
-        <li><a href="./login-form.html" id="dangnhap">Đăng nhập</a></li>
-      </ul>
-      <div class="menu">
-        <div class="menutop">
-          <h1>Danh mục</h1>
-          <i id="closemenu" class="fa-solid fa-xmark"></i>
-        </div>
-        <div class="menubot">
-          <div><a href="./Home_page.html">Trang chủ</a></div>
-          <div class="banmuondidau">
-            <a href="#!">Bạn muốn đi đâu</a>
-            <div><a href="./banahills.html">Bà Nà Hills</a></div>
-            <div><a href="./bandaosontra.html">Bán Đảo Sơn Trà</a></div>
-            <div><a href="./nguhanhson.html">Ngũ Hành Sơn</a></div>
-            <div><a href="./nuithantai.html">Núi Thần Tài</a></div>
-            <div><a href="./hoian.html">Hội An</a></div>
-          </div>
-          <div><a href="./gioithieu.html">Giới thiệu</a></div>
-          <div><a href="./blog.html">Blog</a></div>
-          <div><a href="./lienhe.html">Liên hệ</a></div>
-        </div>
-      </div>
-    </header>
+    
+    <?php
+      include("menu.php");
+    ?>
+    
     <div class="anh">
       <div class="content">
-        <p>Núi thần tài</p>
+        <p>Hội An</p>
         <span class="span1"
           ><i class="fa-sharp fa-solid fa-location-dot"></i> Đà Nẵng,
           VIETNAM</span
         >
         <span class="span2"
-          >Núi Thần Tài (hay Công Viên Suối Khoáng Nóng Thần Tài) toạ lạc tại
-          thôn Phú Túc, xã Hoà Phú, huyện Hoà Vang, thành phố...</span
+          >Hội An là thành phố cổ nằm ở miền Trung Việt Nam, cách Đà Nẵng khoảng
+          30 km về phía Nam. Nổi tiếng với kiến trúc...</span
         >
 
-        <a href=""><u>Xem thêm</u> </a>
+        <a href="#!"><u>Xem thêm</u> </a>
         <i id="triangle" class="fa-solid fa-caret-left"></i>
         <span class="span3"
           >Thời gian tuyệt nhất <br />
@@ -122,58 +55,60 @@
         <span class="span4">Thời lượng lý tưởng</span>
         <span class="span5">THG 2</span>
         <span class="span6">3 ngày</span>
-        <span class="span7">Lễ hội pháo hoa quốc tế Đà Nẵng </span>
+        <span class="span7">Lễ hội Nguyễn Tử Nghiêm</span>
       </div>
       <div class="list1">
         <div class="item">
-          <img src="./../img/Núi thần tài/14934312475544.jpg" alt="" />
+          <img src="./../img/Hội An/chua-cau-hoi-an-2.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img src="./../img/Hội An/dia-diem-du-lich-hoi-an-1.webp" alt="" />
+        </div>
+        <div class="item">
+          <img src="./../img/Hội An/Phố-Cổ-Hội-An1.jpg" alt="" />
         </div>
         <div class="item">
           <img
-            src="./../img/Núi thần tài/cong-vien-nuoc-nui-than-tai-4.jpg"
+            src="./../img/Hội An/shutterstock-492044509_main_1479291993715.jpeg"
             alt=""
           />
         </div>
         <div class="item">
           <img
-            src="./../img/Núi thần tài/gioi-thieu-ve-nui-than-tai-12.jpg"
+            src="./../img/Hội An/vietnam-hội-an-reflections-asia.jpg"
             alt=""
           />
-        </div>
-        <div class="item">
-          <img src="./../img/Núi thần tài/IMG_9358(1).jpg" alt="" />
-        </div>
-        <div class="item">
-          <img src="./../img/Núi thần tài/png.png" alt="" />
         </div>
       </div>
       <div class="slider">
         <div class="list">
           <div class="item">
-            <img src="./../img/Núi thần tài/14934312475544.jpg" alt="" />
+            <img src="./../img/Hội An/chua-cau-hoi-an-2.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="./../img/Hội An/dia-diem-du-lich-hoi-an-1.webp" alt="" />
+          </div>
+          <div class="item">
+            <img src="./../img/Hội An/Phố-Cổ-Hội-An1.jpg" alt="" />
           </div>
           <div class="item">
             <img
-              src="./../img/Núi thần tài/cong-vien-nuoc-nui-than-tai-4.jpg"
+              src="./../img/Hội An/shutterstock-492044509_main_1479291993715.jpeg"
               alt=""
             />
           </div>
           <div class="item">
             <img
-              src="./../img/Núi thần tài/gioi-thieu-ve-nui-than-tai-12.jpg"
+              src="./../img/Hội An/vietnam-hội-an-reflections-asia.jpg"
               alt=""
             />
-          </div>
-          <div class="item">
-            <img src="./../img/Núi thần tài/IMG_9358(1).jpg" alt="" />
-          </div>
-          <div class="item">
-            <img src="./../img/Núi thần tài/png.png" alt="" />
           </div>
         </div>
         <div class="buttons">
           <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
-          <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+          <button class="next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
         </div>
         <ul class="dots">
           <li class="active"></li>
@@ -185,20 +120,20 @@
       </div>
       <div class="infomation">
         <p>
-          Núi Thần Tài (hay Công Viên Suối Khoáng Nóng Thần Tài) toạ lạc tại
-          thôn Phú Túc, xã Hoà Phú, huyện Hoà Vang, thành phố Đà Nẵng. Đây là
-          khu du lịch sinh thái nổi tiếng ở Đà Nẵng, trực thuộc khu bảo tồn
-          thiên nhiên Bà Nà Núi Chúa. Với tổng diện tích hơn 60 héc-ta, có thể
-          miêu tả Công Viên Suối Khoáng Nóng Thần Tài như một “ốc đảo nghỉ
-          dưỡng” giữa không gian rừng nguyên sinh bạt ngàn.
+          Hội An là thành phố cổ nằm ở miền Trung Việt Nam, cách Đà Nẵng khoảng
+          30 km về phía Nam. Nổi tiếng với kiến trúc độc đáo, phong cách Nhật
+          Bản, Trung Quốc và Châu Âu, Hội An được UNESCO công nhận là Di sản Văn
+          hóa Thế giới. Thành phố này là điểm đến lý tưởng để khám phá nét đẹp
+          truyền thống, tham quan các di tích lịch sử và thưởng thức ẩm thực đặc
+          sản địa phương.
         </p>
       </div>
     </div>
-    <h1 class="h1">8 hoạt động ở Sun World Bà Nà Hills</h1>
+    <h1 class="h1">4 Địa điểm du lịch Hội An</h1>
     <div class="dichvu">
       <div>
-        <img src="./../img/Núi thần tài/14934312475544 (1).jpg" alt="" />
-        <p>Tour ngày tham quan Núi thần tài từ Đà Nẵng</p>
+        <img src="./../img/Hội An/chua-cau-hoi-an-2.jpg" alt="" />
+        <p>Tour ngày tham quan Hội An từ Đà Nẵng</p>
         <span>Bán chạy</span><span>Hướng dẫn tiếng việt</span>
         <p>
           <i class="fa-solid fa-star"></i><span>4.5</span>(2,251) 30k+ Đã được
@@ -208,11 +143,8 @@
         <button class="btn">Mua ngay</button>
       </div>
       <div>
-        <img
-          src="./../img/Núi thần tài/cong-vien-nuoc-nui-than-tai-4.jpg"
-          alt=""
-        />
-        <p>Tour Núi thần tài 1 ngày từ Đà Nẵng</p>
+        <img src="./../img/Hội An/dia-diem-du-lich-hoi-an-1.webp" alt="" />
+        <p>Tour Hội An 1 ngày từ Đà Nẵng</p>
         <span>Bán chạy</span><span>Hướng dẫn tiếng việt</span>
         <p>
           <i class="fa-solid fa-star"></i><span>4.5</span>(3,590) 40k+ Đã được
@@ -222,8 +154,8 @@
         <button class="btn">Mua ngay</button>
       </div>
       <div>
-        <img src="./../img/Núi thần tài/14934312475544.jpg" alt="" />
-        <p>Tour du lịch Núi Thần Tài Đà Nẵng 3N2Đ</p>
+        <img src="./../img/Hội An/Phố-Cổ-Hội-An1.jpg" alt="" />
+        <p>Tour ngày Hội An Đà Nẵng</p>
         <span>Bán chạy</span><span>Hướng dẫn tiếng việt</span>
         <p>
           <i class="fa-solid fa-star"></i><span>4.5</span>(3,181) 30k+ Đã được
@@ -234,10 +166,10 @@
       </div>
       <div>
         <img
-          src="./../img/Núi thần tài/Cong-Vien-Suoi-Khoang-Nong-Nui-Than-Tai-7.jpg"
+          src="./../img/Hội An/shutterstock-492044509_main_1479291993715.jpeg"
           alt=""
         />
-        <p>Vé tham quan Núi thần tài Đà Nẵng</p>
+        <p>Tour tham qua Hội An Đà Nẵng</p>
         <span>Bán chạy</span><span>Tour riêng</span>
         <p>
           <i class="fa-solid fa-star"></i><span>4.5</span>(3,181) 30k+ Đã được
@@ -246,118 +178,70 @@
         <p><u>đ</u> 1,156,500</p>
         <button class="btn">Mua ngay</button>
       </div>
-      <div>
-        <img
-          src="./../img/Núi thần tài/danang_tam-onsen-nui-than-tai.jpg"
-          alt=""
-        />
-        <p>Tour Ngày Tùy Chọn Tham Quan Núi thần tài Đà Nẵng</p>
-        <span>Bán chạy</span><span>Hoàn tiền dễ dàng</span>
-        <p>
-          <i class="fa-solid fa-star"></i><span>4.6</span>(316) 8k+ Đã được đặt
-        </p>
-        <p><u>đ</u> 722,500</p>
-        <button class="btn">Mua ngay</button>
-      </div>
-      <div>
-        <img
-          src="./../img/Núi thần tài/gia-ve-nui-than-tai-da-nang-2020.1.jpg"
-          alt=""
-        />
-        <p>Private Check-out Thần Tài Moutain</p>
-        <span>Bán chạy</span><span>Tour riêng</span>
-        <p>
-          <i class="fa-solid fa-star"></i><span>4.9</span>(200)+ Đã được đặt
-        </p>
-        <p><u>đ</u> 1,519,000</p>
-        <button class="btn">Mua ngay</button>
-      </div>
-      <div>
-        <img src="./../img/Núi thần tài//huyetlongho.jpg" alt="" />
-        <p>Tour Trong Ngày Cao Cấp Núi thần tài Đà Nẵng</p>
-        <span>Bán chạy</span><span>Xác nhận tức thời</span>
-        <p>
-          <i class="fa-solid fa-star"></i><span>4.4</span>(459) 5k+ Đã được đặt
-        </p>
-        <p><u>đ</u> 1,608,400</p>
-        <button class="btn">Mua ngay</button>
-      </div>
-      <div>
-        <img
-          src="./../img/Núi thần tài/khach-san-ebisu-nui-than-tai-da-nang.jpg"
-          alt=""
-        />
-        <p>Tour hướng dẫn tham quan Núi thần tài</p>
-        <span>Bán chạy</span><span>Tour riêng</span>
-        <p>
-          <i class="fa-solid fa-star"></i><span>4.5</span>(53) 1k+ Đã được đặt
-        </p>
-        <p><u>đ</u> 1,759,000</p>
-        <button class="btn">Mua ngay</button>
-      </div>
     </div>
-    <h1>Top điểm du lịch Sun World Ba Na Hills</h1>
+    <h1>Top điểm du lịch Sun World Hội An</h1>
     <div class="diadiemdulich">
       <div>
-        <img src="./../img/Núi thần tài/dongsongtinhyeu.jpg" alt="" />
-        <p>Dòng sông tình yêu</p>
+        <img src="./../img/Hội An/chuacau.jpg" alt="" />
+        <p>Chùa Cầu</p>
         <span
-          >Dòng sông tình yêu là một trong những điểm du lịch nổi bật tại núi
-          Thần Tài. Đây là dòng suối trong vắt uốn lượn, tạo thành những khúc
-          quanh đầy lãng mạn. Nơi đây trở thành điểm hẹn lý tưởng cho các cặp
-          đôi, với khung...</span
+          >Chùa Cầu là ngôi chùa được coi như là biểu tượng của Hội An - một
+          biểu tượng đã được nhà nước in lên đồng tiền 200.000 VND. Chiếc cầu do
+          các thương nhân Nhật Bản chung sức xây dựng vào đầu thế kỷ 17...</span
         >
         <a href="">Khám phá <i class="fa-solid fa-chevron-right"></i> </a>
       </div>
       <div>
-        <img src="./../img/Núi thần tài/huyetlongho.jpg" alt="" />
-        <p>Huyệt Long Hồ</p>
+        <img src="./../img/Hội An/hoiquanphuckien.jpg" alt="" />
+        <p>Hội quán Phúc Kiến</p>
         <span
-          >Huyệt Long Hồ được mệnh danh là "Vịnh Hạ Long thu nhỏ" với những hòn
-          đá lởm chởm, uốn lượn như rồng quấn quýt trên mặt hồ. Khung cảnh yên
-          tĩnh, thoáng đãng tạo nên một bầu không khí tĩnh lặng....</span
+          >Hội quán Phúc Kiến có không gian rộng và sâu nhất, với lối kiến trúc
+          xưa với kiểu "Nội công ngoại quốc", và bộ vì kèo tiền điện theo kiểu
+          “Chồng rường giả thủ”, cùng với nhiều bức chạm lộng, chạm nổi hoa lá,
+          điểu thú...</span
         >
         <a href="">Khám phá <i class="fa-solid fa-chevron-right"></i> </a>
       </div>
       <div>
-        <img src="./../img/Núi thần tài/denthantai.jpg" alt="" />
-        <p>Đền thần tài</p>
+        <img src="./../img/Hội An/vinwonder.jpeg" alt="" />
+        <p>VinWonders Nam Hội An</p>
         <span
-          >Đền Thần Tài là một trong những điểm tham quan tâm linh quan trọng
-          tại núi Thần Tài. Đây là nơi thờ phụng vị thần bảo hộ, mang ý nghĩa
-          tâm linh sâu sắc với người dân địa phương...</span
+          >ây là quần thể nghỉ dưỡng “All in one – tất cả trong một” đầu tiên
+          được cấp phép xây dựng tại tỉnh Quảng Nam. Khu vui chơi vừa đẹp vừa
+          hấp dẫn với khu nghỉ dưỡng, khu trò chơi, Vinpearl River Safari – Công
+          viên động...</span
         >
         <a href="">Khám phá <i class="fa-solid fa-chevron-right"></i> </a>
       </div>
       <div>
-        <img src="./../img/Núi thần tài/congviennuoc.jpg" alt="" />
-        <p>Công viên nước</p>
-        <span
-          >Công viên nước tại núi Thần Tài là điểm đến lý tưởng cho gia đình và
-          trẻ em. Nơi đây có nhiều trò chơi nước, như trượt ống, bể bơi, và các
-          hoạt động vui chơi dưới nước sôi động...</span
+        <img src="./../img/Hội An/rungduabaymau.jpg" alt="" />
+        <p>Rừng dừa Bảy Mẫu</p>
+        <span style="text-align: justify"
+          >Rừng dừa Bảy Mẫu hay còn có tên gọi khác là rừng dừa Cẩm Thanh, là
+          một trong những địa điểm du lịch ở Hội An không chỉ thu hút khách du
+          lịch trong nước mà còn quốc tế nữa. Sở dĩ nơi đây được gọi như vậy là
+          bởi...</span
         >
         <a href="">Khám phá <i class="fa-solid fa-chevron-right"></i> </a>
       </div>
       <div>
-        <img src="./../img/Núi thần tài/khunglong.jpg" alt="" />
-        <p>Công viên khủng long</p>
+        <img src="./../img/Hội An/hoiquanchieutrau.jpg" alt="" />
+        <p>Hội Quán Triều Châu</p>
         <span
-          >Công viên khủng long là một điểm nhấn độc đáo của núi Thần Tài. Tại
-          đây, du khách sẽ được "du ngoạn" trong khu vực trưng bày các mô hình
-          khủng long sống động, mang lại cảm giác như được quay trở về thời kỳ
-          tiền sử ...</span
+          >Hội quán có cái tên vô cùng dân dã là “Chùa ông Bổn”. Hội quán do Hoa
+          kiều bang Triều Châu xây dựng vào năm 1845 và được sử dụng làm nơi
+          sinh hoạt cộng đồng và tín ngưỡng...</span
         >
         <a href="">Khám phá <i class="fa-solid fa-chevron-right"></i> </a>
       </div>
       <div>
-        <img src="./../img/Núi thần tài/truongtruongtho.jpg" alt="" />
-        <p>Trứng trường thọ</p>
+        <img src="./../img/hoi-an-1024x615.png" alt="" />
+        <p>Nhà thờ Tộc Trần</p>
         <span
-          >Trướng Trường Thọ là một khu vực độc đáo tại núi Thần Tài, nơi du
-          khách có thể chiêm ngưỡng những tác phẩm điêu khắc hoành tráng. Các
-          bức tượng, hình ảnh linh vật được chạm trổ cầu kỳ, thể hiện nét văn
-          hóa độc...
+          >Nhà thờ Tộc Trần do một vị quan họ Trần từ Trung Hoa di chuyển về Hội
+          An xây dựng lên vào năm 1802. Ngôi nhà mang đậm dấu ấn cổ xưa với
+          nguyên tắc phong thủy truyền thống giao thoa giữa Trung Hoa và Việt
+          Nam...
         </span>
         <a href="">Khám phá <i class="fa-solid fa-chevron-right"></i> </a>
       </div>
@@ -391,7 +275,7 @@
             <p>
               Đánh giá cho: <a href="">Tour Bà Nà Hills 1 Ngày Từ Đà Nẵng</a>
             </p>
-            <p>Người dùng TRAVLES Đăng 7 ngày trước</p>
+            <p>Người dùng TRAVELS Đăng 7 ngày trước</p>
             <p>
               Những ngọn đồi thật tuyệt vời! Có quá nhiều việc phải làm trong
               thời gian ngắn như vậy. Nơi tuyệt vời và cũng đáng để ghé thăm.
@@ -423,7 +307,7 @@
             ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
             ><i class="fa-solid fa-star"></i>
             <p>Đánh giá cho: <a href="">Tour Ngày Sun World Bà Nà Hills</a></p>
-            <p>Người dùng TRAVLES Đăng 7 ngày trước</p>
+            <p>Người dùng TRAVELS Đăng 7 ngày trước</p>
             <p>
               Hướng dẫn viên Long của chúng tôi thật tuyệt vời, anh ấy có kinh
               nghiệm và đưa chúng tôi di chuyển để tránh đám đông. Hành trình
@@ -461,7 +345,7 @@
                 >Private Check-out Tour:Bà Nà Hills,Da Nang Airport Drop-off</a
               >
             </p>
-            <p>Người dùng TRAVLES Đăng 40 ngày trước</p>
+            <p>Người dùng TRAVELS Đăng 40 ngày trước</p>
             <p>
               Buổi sáng đón khách suôn sẻ,không cần lo lắng về hành lý, ra vào
               thuận tiện vì tôi đã nhận được vé điện tử đi Bà Nà Hills,dịch vụ
@@ -594,14 +478,16 @@
       </div>
     </div>
     <h1 class="h1xuhuong">Xu hướng</h1>
+
     <div class="xuhuong">
       <div class="slider-img">
         <div class="list-item">
           <div class="item">
             <div class="item1">
-              <img src="./../img/banahill/ba-na-1hills.jpg" alt="" /><a
-                >Bà Nà Hills</a
-              >
+              <img
+                src="./../img/Núi thần tài/14934312475544 (1).jpg"
+                alt=""
+              /><a>Núi thần tài</a>
             </div>
             <div class="item2">
               <img src="./../img/ban-dao-son-tra-3-1024x550.webp" alt="" /><a
@@ -612,7 +498,9 @@
               <img src="./../img/ngũ hành sơn.jpg" alt="" /><a>Ngũ Hành Sơn</a>
             </div>
             <div class="item4">
-              <img src="./../img/culaocham.jpg" alt="" /><a>Hội An</a>
+              <img src="./../img/banahill/ba-na-1hills.jpg" alt="" /><a
+                >Bà Nà Hills</a
+              >
             </div>
           </div>
         </div>
@@ -623,87 +511,81 @@
       </div>
       <div class="content1">
         <p>
-          Núi Thần Tài (hay Công Viên Suối Khoáng Nóng Thần Tài) toạ lạc tại
-          thôn Phú Túc, xã Hoà Phú, huyện Hoà Vang, thành phố Đà Nẵng. Đây là
-          khu du lịch sinh thái nổi tiếng ở Đà Nẵng, trực thuộc khu bảo tồn
-          thiên nhiên Bà Nà Núi Chúa. Với tổng diện tích hơn 60 héc-ta, có thể
-          miêu tả Công Viên Suối Khoáng Nóng Thần Tài như một “ốc đảo nghỉ
-          dưỡng” giữa không gian rừng nguyên sinh bạt ngàn, với khí hậu quanh
-          năm ôn hoà khác hẳn với thời tiết miền Trung khắc nghiệt. Tận dụng
-          nguồn suối khoáng nóng tự nhiên, nhiều hoạt động chăm sóc sắc đẹp, sức
-          khoẻ, vui chơi và giải trí ở Núi Thần Tài đang rất “được lòng” du
-          khách lẫn người dân địa phương; đơn cử như spa, dịch vụ tắm nước
-          khoáng nóng, tắm bùn, tắm trà, công viên nước,…
+          Hội An là một thành phố cổ kính nằm ở miền Trung Việt Nam, cách thành
+          phố Đà Nẵng khoảng 30 km về phía Nam. Với lịch sử hàng trăm năm tuổi,
+          Hội An nổi tiếng với kiến trúc độc đáo, kết hợp tinh tế giữa các phong
+          cách Nhật Bản, Trung Quốc và Châu Âu. Ngôi làng cổ kính này đã được
+          UNESCO công nhận là Di sản Văn hóa Thế giới vào năm 1999.Du khách đến
+          với Hội An sẽ lạc vào không gian yên bình, được chiêm ngưỡng những
+          ngôi nhà cổ, cầu Nhật Bản truyền thống và khám phá các làng nghề thủ
+          công mỹ nghệ độc đáo. Ngoài ra, Hội An còn nổi tiếng với ẩm thực đường
+          phố độc đáo, từ bánh mì Việt Nam đến các món hải sản tươi ngon.Bên
+          cạnh những di tích lịch sử và văn hóa, Hội An cũng thu hút du khách
+          bởi phong cảnh thiên nhiên tuyệt đẹp, với bãi biển Cửa Đại, sông Thu
+          Bồn yên bình và nhiều danh lam thắng cảnh khác. Đây là một điểm đến lý
+          tưởng để khám phá nét đẹp truyền thống của Việt Nam.
         </p>
       </div>
       <a href="#!" class="xemthem"><u>Xem thêm</u></a>
       <a href="#!" class="xemithon"><u>Xem ít hơn</u></a>
     </div>
-    <h1>Những câu hỏi phổ biến về Núi Thần Tài</h1>
-
+    <h1>Những câu hỏi phổ biến về Hội An</h1>
     <div class="thongtin">
       <div>
-        <h2>Núi Thần Tài thành phố Đà Nẵng ở đâu ?</h2>
+        <h2>Hội An Đà Nẵng nổi tiếng vì điều gì?</h2>
         <i id="up" class="fa-solid fa-chevron-up"></i>
         <i id="down" class="fa-solid fa-chevron-down"></i>
         <p>
-          Bán Đảo Sơn Trà là một bán đảo nằm ở phường Thọ Quang, quận Sơn Trà,
-          phía bắc thành phố Đà Nẵng, tỉnh Quảng Nam, miền Trung Việt Nam. Bản
-          Đảo này nằm giữa biển Đông và thành phố Đà Nẵng, tạo ra một vùng đất
-          nằm ngay tại cửa ngõ biển của thành phố.
+          Hội An nổi tiếng với phố cổ được UNESCO công nhận, mang kiến trúc đa
+          dạng của Việt Nam, Nhật Bản, Trung Quốc và Pháp. Thành phố này hấp dẫn
+          bởi lễ hội đèn lồng lung linh, ẩm thực phong phú như cao lầu, mì
+          Quảng, và các làng nghề truyền thống. Hội An còn có chợ đêm sôi động
+          và bãi biển An Bàng tuyệt đẹp, thu hút du khách từ khắp nơi.
         </p>
       </div>
       <div>
-        <h2>Cách di chuyển đến Núi thần tài từ Đà Nẵng?</h2>
+        <h2>Có phù hợp cho trẻ em và gia đình không?</h2>
         <i id="up" class="fa-solid fa-chevron-up"></i>
         <i id="down" class="fa-solid fa-chevron-down"></i>
         <p>
-          Bán đảo Sơn Trà nằm ở phía đông bắc thành phố Đà Nẵng, cách trung tâm
-          thành phố khoảng 10 kilomét. Bạn có thể đến Bán Đảo Sơn Trà bằng xe ô
-          tô hoặc xe máy từ trung tâm thành phố Đà Nẵng. Khi chọn các tour du
-          lịch bán đảo Sơn Trà trên TRAVLES, bạn sẽ được cung cấp dịch vụ đưa
-          đón miễn phí từ khách sạn đến đảo. Tham khảo thêm thông tin ở mục “Chi
-          tiết gói dịch vụ” của các tour bên trên.
+          Hội An phù hợp cho trẻ em và gia đình nhờ không gian yên tĩnh, an
+          toàn, nhiều hoạt động thủ công và khám phá văn hóa, cùng ẩm thực phong
+          phú.
         </p>
       </div>
       <div>
-        <h2>Tham quan Núi thần tài mùa nào đẹp nhất?</h2>
+        <h2>Cách tốt nhất để trải nghiệm Hội An là gì?</h2>
         <i id="up" class="fa-solid fa-chevron-up"></i>
         <i id="down" class="fa-solid fa-chevron-down"></i>
         <p>
-          Thời gian lý tưởng để đi du lịch đảo Sơn Trà là vào mùa khô, khoảng từ
-          tháng 2 đến tháng 8. Lúc này thời tiết khô ráo, tạo điều kiện thuận
-          lợi cho việc di chuyển và tham quan đảo. Tuy nhiên, tránh thời gian từ
-          tháng 10 đến tháng 11, khi bão có thể ảnh hưởng đến kỳ nghỉ của bạn.
-          Đảm bảo kiểm tra dự báo thời tiết trước khi bạn đến để có một trải
-          nghiệm tốt nhất tại Núi Sơn Trà.
+          Cách tốt nhất để trải nghiệm Hội An là đi bộ khám phá phố cổ với kiến
+          trúc đa dạng và đèn lồng lung linh. Tham gia làm đèn lồng và các hoạt
+          động thủ công tại làng nghề truyền thống. Thưởng thức ẩm thực địa
+          phương như cao lầu, mì Quảng, và bánh mì Hội An. Thăm chợ đêm Hội An
+          để mua sắm và thưởng thức ẩm thực đường phố. Thư giãn tại bãi biển An
+          Bàng với cảnh đẹp và nước biển trong xanh.
         </p>
       </div>
       <div>
-        <h2>Ăn gì ở Núi thần tài thành phố Đà Nẵng?</h2>
+        <h2>Có phù hợp cho du khách có ngân sách hạn chế không?</h2>
         <i id="up" class="fa-solid fa-chevron-up"></i>
         <i id="down" class="fa-solid fa-chevron-down"></i>
         <p>
-          Bán đảo Sơn Trà ở Đà Nẵng nổi tiếng với ẩm thực phong phú như hải sản
-          tươi ngon và đa dạng như tôm hùm, tôm sú, cá mú, bạch tuộc, cá lá,
-          cua, ghẹ, cá chình. Ngoài ra, du khách cũng có thể thưởng thức thịt
-          thú rừng và các loại rau rừng tự nhiên tại đảo. Một đặc sản khác của
-          Núi Sơn Trà là rượu dừa, được làm từ nếp cái và men ủ trong trái dừa
-          nhỏ, giữ nguyên được vị thanh ngọt dễ chịu của nước dừa.
+          Hội An rất phù hợp cho du khách có ngân sách hạn chế nhờ chi phí sinh
+          hoạt thấp, nhiều lựa chọn ăn uống giá rẻ, chỗ ở phong phú từ homestay
+          đến nhà nghỉ bình dân, và nhiều điểm tham quan miễn phí hoặc có giá vé
+          phải chăng như phố cổ, chùa Cầu, và chợ đêm.
         </p>
       </div>
       <div>
-        <h2>Cần chuẩn bị những gì cho chuyến du lịch Núi thần tài?</h2>
+        <h2>Thời điểm nào trong năm là thích hợp nhất để tham quan Hội An?</h2>
         <i id="up" class="fa-solid fa-chevron-up"></i>
         <i id="down" class="fa-solid fa-chevron-down"></i>
         <p>
-          Bạn nên chuẩn bị quần áo thoải mái và phù hợp thời tiết, mũ, kính râm,
-          kem chống nắng, thuốc cá nhân và đồ bơi nếu bạn muốn tham gia chèo
-          kayak hoặc tắm biển. Vì nhiều nơi ở đây không chấp nhận thanh toán
-          bằng thẻ, bạn nên cầm theo một ít tiền mặt cho các chi phí cá nhân như
-          mua sắm hoặc tham gia các trò chơi ngoài. *Đừng quên lưu voucher đặt
-          tour hay hoạt động trên điện thoại và mang giấy tờ cá nhân như CCCD để
-          tham gia.
+          Thời điểm thích hợp nhất để tham quan Hội An là từ tháng 2 đến tháng
+          4, khi thời tiết khô ráo, mát mẻ và dễ chịu. Đây là giai đoạn ít mưa,
+          nhiệt độ không quá cao, rất thuận lợi cho việc khám phá phố cổ và tham
+          gia các hoạt động ngoài trời.
         </p>
       </div>
     </div>
@@ -800,7 +682,6 @@
         </div>
       </div>
     </footer>
-
-    <script src="./../js/nuithantai.js"></script>
+    <script src="./../js/hoian.js"></script>
   </body>
 </html>

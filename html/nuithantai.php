@@ -4,25 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
     <link
       rel="stylesheet"
-      href="./../css/bandaosontra-mobile.css"
+      href="./../css/nuithantai-mobile.css"
       media="(max-width: 700px)"
     />
 
     <link
       rel="stylesheet"
-      href="./../css/bandaosontra-tablet.css"
+      href="./../css/nuithantai-tablet.css"
       media="(min-width: 701px) and (max-width: 1024px)"
     />
 
     <link
       rel="stylesheet"
-      href="./../css/bandaosontra.css"
+      href="./../css/nuithantai.css"
       media="(min-width: 1025px)"
     />
-
     <link rel="shortcut icon" type="" href="./img/icons8-tourism-20.png" />
     <link
       rel="stylesheet"
@@ -30,133 +28,79 @@
     />
   </head>
   <body>
-    <header>
-      <div class="header_top">
-        <div><h1>TRAVELS</h1></div>
-        <div>
-          <input type="search" name="" id="searchInput" placeholder="" /><i
-            class="fa-solid fa-magnifying-glass"
-          ></i>
-        </div>
-        <div>
-          <i class="fa-solid fa-phone-volume"></i>
-          <span>Hotline</span><span>08796366334</span>
-        </div>
-        <a href="./signup.html" id="dangky">Đăng ký</a>
-        <a href="./login-form.html" id="dangnhap">Đăng nhập</a>
-      </div>
-      <div class="header_middle">
-        <ul>
-          <li>
-            <a href="./Home_page.html">Trang chủ </a>
-          </li>
-          <li>
-            <a class="a" href="#!"
-              >Bạn muốn đi đâu<i class="fa-solid fa-chevron-up"></i
-            ></a>
-          </li>
-          <li>
-            <a href="./../html/gioithieu.html">Giới thiệu </a>
-          </li>
-          <li>
-            <a href="./../html/blog.html">Blog </a>
-          </li>
-          <li>
-            <a href="./../html/lienhe.html">Liên hệ </a>
-          </li>
-        </ul>
-      </div>
-      <div class="header_bot">
-        <ul>
-          <li><a href="./banahills.html">Bà Nà Hills</a></li>
-          <li><a href="./bandaosontra.html">Bán đảo Sơn Trà</a></li>
-          <li><a href="./nguhanhson.html">Ngũ Hành Sơn</a></li>
-          <li><a href="./nuithantai.html">Núi thần tài</a></li>
-          <li><a href="./hoian.html">Hội An</a></li>
-        </ul>
-      </div>
-    </header>
-    <header class="headermobile">
-      <ul>
-        <li><i id="openmenu" class="fa-solid fa-bars"></i></li>
-        <li><h2>TRAVELS</h2></li>
-        <li><a href="./login-form.html" id="dangnhap">Đăng nhập</a></li>
-      </ul>
-      <div class="menu">
-        <div class="menutop">
-          <h1>Danh mục</h1>
-          <i id="closemenu" class="fa-solid fa-xmark"></i>
-        </div>
-        <div class="menubot">
-          <div><a href="./Home_page.html">Trang chủ</a></div>
-          <div class="banmuondidau">
-            <a href="#!">Bạn muốn đi đâu</a>
-            <div><a href="./banahills.html">Bà Nà Hills</a></div>
-            <div><a href="./bandaosontra.html">Bán Đảo Sơn Trà</a></div>
-            <div><a href="./nguhanhson.html">Ngũ Hành Sơn</a></div>
-            <div><a href="./nuithantai.html">Núi Thần Tài</a></div>
-            <div><a href="./hoian.html">Hội An</a></div>
-          </div>
-          <div><a href="./gioithieu.html">Giới thiệu</a></div>
-          <div><a href="./blog.html">Blog</a></div>
-          <div><a href="./lienhe.html">Liên hệ</a></div>
-        </div>
-      </div>
-    </header>
+
+    <?php
+      include("menu.php");
+    ?>
+    
     <div class="anh">
       <div class="content">
-        <p>Bán Đảo Sơn Trà</p>
+        <p>Núi thần tài</p>
         <span class="span1"
           ><i class="fa-sharp fa-solid fa-location-dot"></i> Đà Nẵng,
           VIETNAM</span
         >
         <span class="span2"
-          >Với sự hoà quyện của phong cảnh thiên nhiên tuyệt đẹp, không khí
-          thanh bình, và hệ sinh thái động thực vật đa dạng, bán đảo Sơn Trà
-          thực sự là...</span
+          >Núi Thần Tài (hay Công Viên Suối Khoáng Nóng Thần Tài) toạ lạc tại
+          thôn Phú Túc, xã Hoà Phú, huyện Hoà Vang, thành phố...</span
         >
 
         <a href=""><u>Xem thêm</u> </a>
         <i id="triangle" class="fa-solid fa-caret-left"></i>
-        <span class="span3">Thời gian tuyệt nhất <br />để đến</span>
+        <span class="span3"
+          >Thời gian tuyệt nhất <br />
+          để đến</span
+        >
         <span class="span4">Thời lượng lý tưởng</span>
         <span class="span5">THG 2</span>
         <span class="span6">3 ngày</span>
-        <span class="span7">Lễ hội Cầu Ngư </span>
+        <span class="span7">Lễ hội pháo hoa quốc tế Đà Nẵng </span>
       </div>
       <div class="list1">
         <div class="item">
-          <img src="./../img/bandaosontra/mattronmoc.jpg" alt="" />
+          <img src="./../img/Núi thần tài/14934312475544.jpg" alt="" />
         </div>
         <div class="item">
-          <img src="./../img/bandaosontra/ma2flmh7fal5visbuiy3.webp" alt="" />
+          <img
+            src="./../img/Núi thần tài/cong-vien-nuoc-nui-than-tai-4.jpg"
+            alt=""
+          />
         </div>
         <div class="item">
-          <img src="./../img/bandaosontra/nmhfgljirsuyikkmhodl.webp" alt="" />
+          <img
+            src="./../img/Núi thần tài/gioi-thieu-ve-nui-than-tai-12.jpg"
+            alt=""
+          />
         </div>
         <div class="item">
-          <img src="./../img/bandaosontra/nukmbza93ykzeecoxd21.webp" alt="" />
+          <img src="./../img/Núi thần tài/IMG_9358(1).jpg" alt="" />
         </div>
         <div class="item">
-          <img src="./../img/bandaosontra/po4mg5mmint3rhqt9qc8.webp" alt="" />
+          <img src="./../img/Núi thần tài/png.png" alt="" />
         </div>
       </div>
       <div class="slider">
         <div class="list">
           <div class="item">
-            <img src="./../img/bandaosontra/mattronmoc.jpg" alt="" />
+            <img src="./../img/Núi thần tài/14934312475544.jpg" alt="" />
           </div>
           <div class="item">
-            <img src="./../img/bandaosontra/ma2flmh7fal5visbuiy3.webp" alt="" />
+            <img
+              src="./../img/Núi thần tài/cong-vien-nuoc-nui-than-tai-4.jpg"
+              alt=""
+            />
           </div>
           <div class="item">
-            <img src="./../img/bandaosontra/nmhfgljirsuyikkmhodl.webp" alt="" />
+            <img
+              src="./../img/Núi thần tài/gioi-thieu-ve-nui-than-tai-12.jpg"
+              alt=""
+            />
           </div>
           <div class="item">
-            <img src="./../img/bandaosontra/nukmbza93ykzeecoxd21.webp" alt="" />
+            <img src="./../img/Núi thần tài/IMG_9358(1).jpg" alt="" />
           </div>
           <div class="item">
-            <img src="./../img/bandaosontra/po4mg5mmint3rhqt9qc8.webp" alt="" />
+            <img src="./../img/Núi thần tài/png.png" alt="" />
           </div>
         </div>
         <div class="buttons">
@@ -173,21 +117,20 @@
       </div>
       <div class="infomation">
         <p>
-          Với sự hoà quyện của phong cảnh thiên nhiên tuyệt đẹp, không khí thanh
-          bình, và hệ sinh thái động thực vật đa dạng, bán đảo Sơn Trà thực sự
-          là điểm đến mà bạn không thể bỏ lỡ khi đặt chân đến thành phố Đà Nẵng.
-          Hãy chuẩn bị tinh thần cho một chuyến du ngoạn bán đảo Sơn Trà đầy màu
-          sắc, nơi bạn có thể hòa mình vào thiên nhiên hoang sơ, đắm chìm trong
-          dòng nước mát lạnh của biển cả
+          Núi Thần Tài (hay Công Viên Suối Khoáng Nóng Thần Tài) toạ lạc tại
+          thôn Phú Túc, xã Hoà Phú, huyện Hoà Vang, thành phố Đà Nẵng. Đây là
+          khu du lịch sinh thái nổi tiếng ở Đà Nẵng, trực thuộc khu bảo tồn
+          thiên nhiên Bà Nà Núi Chúa. Với tổng diện tích hơn 60 héc-ta, có thể
+          miêu tả Công Viên Suối Khoáng Nóng Thần Tài như một “ốc đảo nghỉ
+          dưỡng” giữa không gian rừng nguyên sinh bạt ngàn.
         </p>
       </div>
     </div>
-    <h1 class="h1">12 hoạt động ở Bán đảo Sơn Trà</h1>
-
+    <h1 class="h1">8 hoạt động ở Sun World Bà Nà Hills</h1>
     <div class="dichvu">
       <div>
-        <img src="./../img/bandaosontra/vhfnsq2dr2d2d94smy67.webp" alt="" />
-        <p>Tour ngày tham quan Bán Đảo Sơn Trà từ Đà Nẵng</p>
+        <img src="./../img/Núi thần tài/14934312475544 (1).jpg" alt="" />
+        <p>Tour ngày tham quan Núi thần tài từ Đà Nẵng</p>
         <span>Bán chạy</span><span>Hướng dẫn tiếng việt</span>
         <p>
           <i class="fa-solid fa-star"></i><span>4.5</span>(2,251) 30k+ Đã được
@@ -197,8 +140,11 @@
         <button class="btn">Mua ngay</button>
       </div>
       <div>
-        <img src="./../img/bandaosontra/vga6zujzojjapyk2rzyd.webp" alt="" />
-        <p>Tour Bán Đảo Sơn Trà 1 ngày từ Đà Nẵng</p>
+        <img
+          src="./../img/Núi thần tài/cong-vien-nuoc-nui-than-tai-4.jpg"
+          alt=""
+        />
+        <p>Tour Núi thần tài 1 ngày từ Đà Nẵng</p>
         <span>Bán chạy</span><span>Hướng dẫn tiếng việt</span>
         <p>
           <i class="fa-solid fa-star"></i><span>4.5</span>(3,590) 40k+ Đã được
@@ -208,8 +154,8 @@
         <button class="btn">Mua ngay</button>
       </div>
       <div>
-        <img src="./../img/bandaosontra/uce3uq8s0kwnlv6oukko.webp" alt="" />
-        <p>Half-day Son Tra Penisula Snorkeling & Fishing Tour</p>
+        <img src="./../img/Núi thần tài/14934312475544.jpg" alt="" />
+        <p>Tour du lịch Núi Thần Tài Đà Nẵng 3N2Đ</p>
         <span>Bán chạy</span><span>Hướng dẫn tiếng việt</span>
         <p>
           <i class="fa-solid fa-star"></i><span>4.5</span>(3,181) 30k+ Đã được
@@ -219,8 +165,11 @@
         <button class="btn">Mua ngay</button>
       </div>
       <div>
-        <img src="./../img/bandaosontra/t8nq4sdopdnwk5lffqpp.webp" alt="" />
-        <p>Vé tham quan Bán Đảo Sơn Trà Đà Nẵng</p>
+        <img
+          src="./../img/Núi thần tài/Cong-Vien-Suoi-Khoang-Nong-Nui-Than-Tai-7.jpg"
+          alt=""
+        />
+        <p>Vé tham quan Núi thần tài Đà Nẵng</p>
         <span>Bán chạy</span><span>Tour riêng</span>
         <p>
           <i class="fa-solid fa-star"></i><span>4.5</span>(3,181) 30k+ Đã được
@@ -230,8 +179,11 @@
         <button class="btn">Mua ngay</button>
       </div>
       <div>
-        <img src="./../img/bandaosontra/po4mg5mmint3rhqt9qc8.webp" alt="" />
-        <p>Tour Ngày Tùy Chọn Tham Quan Bán Đảo Sơn Trà...</p>
+        <img
+          src="./../img/Núi thần tài/danang_tam-onsen-nui-than-tai.jpg"
+          alt=""
+        />
+        <p>Tour Ngày Tùy Chọn Tham Quan Núi thần tài Đà Nẵng</p>
         <span>Bán chạy</span><span>Hoàn tiền dễ dàng</span>
         <p>
           <i class="fa-solid fa-star"></i><span>4.6</span>(316) 8k+ Đã được đặt
@@ -240,8 +192,11 @@
         <button class="btn">Mua ngay</button>
       </div>
       <div>
-        <img src="./../img/bandaosontra/nukmbza93ykzeecoxd21.webp" alt="" />
-        <p>Private Check-out Tour:Son Tra Peninsula...</p>
+        <img
+          src="./../img/Núi thần tài/gia-ve-nui-than-tai-da-nang-2020.1.jpg"
+          alt=""
+        />
+        <p>Private Check-out Thần Tài Moutain</p>
         <span>Bán chạy</span><span>Tour riêng</span>
         <p>
           <i class="fa-solid fa-star"></i><span>4.9</span>(200)+ Đã được đặt
@@ -250,8 +205,8 @@
         <button class="btn">Mua ngay</button>
       </div>
       <div>
-        <img src="./../img/ban-dao-son-tra-3-1024x550.webp" alt="" />
-        <p>Tour Trong Ngày Cao Cấp Núi Sơn Trà Đà Nẵng...</p>
+        <img src="./../img/Núi thần tài//huyetlongho.jpg" alt="" />
+        <p>Tour Trong Ngày Cao Cấp Núi thần tài Đà Nẵng</p>
         <span>Bán chạy</span><span>Xác nhận tức thời</span>
         <p>
           <i class="fa-solid fa-star"></i><span>4.4</span>(459) 5k+ Đã được đặt
@@ -260,8 +215,11 @@
         <button class="btn">Mua ngay</button>
       </div>
       <div>
-        <img src="./../img/bandaosontra/nmhfgljirsuyikkmhodl.webp" alt="" />
-        <p>Tour hướng dẫn tham quan Bán Đảo Sơn Trà...</p>
+        <img
+          src="./../img/Núi thần tài/khach-san-ebisu-nui-than-tai-da-nang.jpg"
+          alt=""
+        />
+        <p>Tour hướng dẫn tham quan Núi thần tài</p>
         <span>Bán chạy</span><span>Tour riêng</span>
         <p>
           <i class="fa-solid fa-star"></i><span>4.5</span>(53) 1k+ Đã được đặt
@@ -269,122 +227,73 @@
         <p><u>đ</u> 1,759,000</p>
         <button class="btn">Mua ngay</button>
       </div>
-      <div>
-        <img src="./../img/bandaosontra/ma2flmh7fal5visbuiy3.webp" alt="" />
-        <p>Tour tham quan lăn biển Sơn Trà Đà Nẵng</p>
-        <span>Bán chạy</span><span>Tour riêng</span>
-        <p>
-          <i class="fa-solid fa-star"></i><span>4.4</span>(19) 900+ Đã được đặt
-        </p>
-        <p><u>đ</u> 2,714,800</p>
-        <button class="btn">Mua ngay</button>
-      </div>
-      <div>
-        <img
-          src="./../img/bandaosontra/du-lich-ban-dao-son-tra-da-nang-vietnam-04.jpg"
-          alt=""
-        />
-        <p>Vé tham quan Chùa Linh Ưng Bán Đảo Sơn Trà</p>
-        <span>Bán chạy</span><span>Xác nhận tức thời</span>
-        <p>
-          <i class="fa-solid fa-star"></i><span>4.7</span>(23k+) 700k+ Đã được
-          đặt
-        </p>
-        <p><u>đ</u> 840,000</p>
-        <button class="btn">Mua ngay</button>
-      </div>
-      <div>
-        <img
-          src="./../img/bandaosontra/1565707949-ban-dao-son-tra.jpg"
-          alt=""
-        />
-        <p>Trải nghiệm"Bán Đaỏ Sơn Trà Đà Nẵng</p>
-        <span>Bán chạy</span><span>Tour riêng</span>
-        <p>
-          <i class="fa-solid fa-star"></i><span>4.4</span>(414) 10k+ Đã được đặt
-        </p>
-        <p><u>đ</u> 840,000</p>
-        <button class="btn">Mua ngay</button>
-      </div>
-      <div>
-        <img src="./../img/bandaosontra/095907_son-tra-da-nang.jpg" alt="" />
-        <p>3D2N Cắm trại ở Bán Đảo Sơn Trà</p>
-        <span>Bán chạy</span><span>Hướng dẫn tiếng việt</span>
-        <p><i class="fa-solid fa-star"></i><span>5.0</span> 50+ Đã được đặt</p>
-        <p><u>đ</u> 4,294,000</p>
-        <button class="btn">Mua ngay</button>
-      </div>
     </div>
-    <h1>Top điểm du lịch Bán đảo Sơn Trà Đà Nẵng</h1>
+    <h1>Top điểm du lịch Sun World Ba Na Hills</h1>
     <div class="diadiemdulich">
       <div>
-        <img src="./../img/bandaosontra/chùa-linh-ứng.jpg" alt="" />
-        <p>Chùa Linh Ứng</p>
+        <img src="./../img/Núi thần tài/dongsongtinhyeu.jpg" alt="" />
+        <p>Dòng sông tình yêu</p>
         <span
-          >Đây chính là địa điểm du lịch Đà Nẵng nổi tiếng nhất mà bạn có dịp
-          ghé đến đầu tiên nếu xuất phát từ đường Hoàng Sa.Vì nằm gần Bãi
-          Bụt,nên ngôi chùa này còn được gọi là chùa Linh Ứng Bãi Bụt...</span
+          >Dòng sông tình yêu là một trong những điểm du lịch nổi bật tại núi
+          Thần Tài. Đây là dòng suối trong vắt uốn lượn, tạo thành những khúc
+          quanh đầy lãng mạn. Nơi đây trở thành điểm hẹn lý tưởng cho các cặp
+          đôi, với khung...</span
         >
         <a href="">Khám phá <i class="fa-solid fa-chevron-right"></i> </a>
       </div>
       <div>
-        <img
-          src="./../img/bandaosontra/1462869700_cay-da-ngan-nam-tuoi-1.jpg"
-          alt=""
-        />
-        <p>Cây đa Ngàn Năm</p>
+        <img src="./../img/Núi thần tài/huyetlongho.jpg" alt="" />
+        <p>Huyệt Long Hồ</p>
         <span
-          >Trên đường check in đỉnh Bàn Cờ, bạn sẽ có dịp đi ngang qua vị trí
-          cây đa ngàn năm tuổi rất nổi tiếng ở đây. Không chỉ có tuổi thọ lên
-          đến ngàn năm, cây đa này còn có hình thù kỳ lạ, với nhiều gốc...</span
+          >Huyệt Long Hồ được mệnh danh là "Vịnh Hạ Long thu nhỏ" với những hòn
+          đá lởm chởm, uốn lượn như rồng quấn quýt trên mặt hồ. Khung cảnh yên
+          tĩnh, thoáng đãng tạo nên một bầu không khí tĩnh lặng....</span
         >
         <a href="">Khám phá <i class="fa-solid fa-chevron-right"></i> </a>
       </div>
       <div>
-        <img src="./../img/bandaosontra/dinhbanco.jpg" alt="" />
-        <p>Đỉnh bàn cờ</p>
+        <img src="./../img/Núi thần tài/denthantai.jpg" alt="" />
+        <p>Đền thần tài</p>
         <span
-          >Ở trên đỉnh của bán đảo Sơn Trà, có một địa điểm rất thu hút giới trẻ
-          đó chính là đỉnh Bàn Cờ. Ở đây không chỉ nổi tiếng với khung cảnh
-          thiên nhiên hùng vĩ, tựa chốn bồng lai tiên cảnh mà còn xuất...</span
+          >Đền Thần Tài là một trong những điểm tham quan tâm linh quan trọng
+          tại núi Thần Tài. Đây là nơi thờ phụng vị thần bảo hộ, mang ý nghĩa
+          tâm linh sâu sắc với người dân địa phương...</span
         >
         <a href="">Khám phá <i class="fa-solid fa-chevron-right"></i> </a>
       </div>
       <div>
-        <img src="./../img/bandaosontra/ngonhaidang.jpg" alt="" />
-        <p>Ngọn Hải Đăng Sơn Trà</p>
+        <img src="./../img/Núi thần tài/congviennuoc.jpg" alt="" />
+        <p>Công viên nước</p>
         <span
-          >Còn được gọi là hải đăng Tiên Sa, ngọn hải đăng Sơn Trà nằm ở độ cao
-          223m so với mực nước biển, được biết đến là một trong những ngọn hải
-          đăng cổ đẹp nhất Việt Nam. Được Pháp xây dựng...</span
+          >Công viên nước tại núi Thần Tài là điểm đến lý tưởng cho gia đình và
+          trẻ em. Nơi đây có nhiều trò chơi nước, như trượt ống, bể bơi, và các
+          hoạt động vui chơi dưới nước sôi động...</span
         >
         <a href="">Khám phá <i class="fa-solid fa-chevron-right"></i> </a>
       </div>
       <div>
-        <img src="./../img/bandaosontra/ghềnh bàng.jpg" alt="" />
-        <p>Ghềnh Bàng</p>
+        <img src="./../img/Núi thần tài/khunglong.jpg" alt="" />
+        <p>Công viên khủng long</p>
         <span
-          >Du lịch bán đảo Sơn Trà vốn nổi tiếng với Bãi Bụt, chùa Linh Ứng,
-          đỉnh Bàn Cờ, Bãi Tiên Sa song có một điểm đến vẫn chưa được khai sáng,
-          đó là Ghềnh Bàng. Dù là một địa điểm tuyệt đẹp...</span
+          >Công viên khủng long là một điểm nhấn độc đáo của núi Thần Tài. Tại
+          đây, du khách sẽ được "du ngoạn" trong khu vực trưng bày các mô hình
+          khủng long sống động, mang lại cảm giác như được quay trở về thời kỳ
+          tiền sử ...</span
         >
         <a href="">Khám phá <i class="fa-solid fa-chevron-right"></i> </a>
       </div>
       <div>
-        <img
-          src="./../img/bandaosontra/hoxanhbuctranhsonthuyhuutinhgiualongdanang.webp"
-          alt=""
-        />
-        <p>Hồ Xanh</p>
+        <img src="./../img/Núi thần tài/truongtruongtho.jpg" alt="" />
+        <p>Trứng trường thọ</p>
         <span
-          >Nằm gần với vị trí Bãi Bụt có một địa điểm mang tên Hồ Xanh, một địa
-          điểm du lịch Sơn Trà mới nổi lên gần đây. Hồ Xanh là hồ tự nhiên, bao
-          bọc xung quanh nó là những hòn đá lớn nhỏ và cây...
+          >Trướng Trường Thọ là một khu vực độc đáo tại núi Thần Tài, nơi du
+          khách có thể chiêm ngưỡng những tác phẩm điêu khắc hoành tráng. Các
+          bức tượng, hình ảnh linh vật được chạm trổ cầu kỳ, thể hiện nét văn
+          hóa độc...
         </span>
         <a href="">Khám phá <i class="fa-solid fa-chevron-right"></i> </a>
       </div>
     </div>
-
     <h1>Đánh giá của khách hàng</h1>
     <div class="feedback">
       <div class="list-feedback">
@@ -414,7 +323,7 @@
             <p>
               Đánh giá cho: <a href="">Tour Bà Nà Hills 1 Ngày Từ Đà Nẵng</a>
             </p>
-            <p>Người dùng TRAVELS Đăng 7 ngày trước</p>
+            <p>Người dùng TRAVLES Đăng 7 ngày trước</p>
             <p>
               Những ngọn đồi thật tuyệt vời! Có quá nhiều việc phải làm trong
               thời gian ngắn như vậy. Nơi tuyệt vời và cũng đáng để ghé thăm.
@@ -446,7 +355,7 @@
             ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
             ><i class="fa-solid fa-star"></i>
             <p>Đánh giá cho: <a href="">Tour Ngày Sun World Bà Nà Hills</a></p>
-            <p>Người dùng TRAVELS Đăng 7 ngày trước</p>
+            <p>Người dùng TRAVLES Đăng 7 ngày trước</p>
             <p>
               Hướng dẫn viên Long của chúng tôi thật tuyệt vời, anh ấy có kinh
               nghiệm và đưa chúng tôi di chuyển để tránh đám đông. Hành trình
@@ -464,13 +373,13 @@
             </p>
             <p>Cleopatra ****** Đăng 58 ngày trước</p>
             <p>
-              Bán Đảo Sơn Trà đẹp mê hồn. Nơi này rất rộng lớn và là một nơi
-              huyền diệu như Disneyland và tôi thực sự đã yêu. Tôi không nghĩ
-              chúng tôi đã khám phá mọi nơi vì chúng tôi chỉ dành một ngày. Lời
-              khuyên của mình là nên đi xe riêng để có nhiều thời gian rảnh.
-              Phong cảnh rất đẹp và may mắn là thời tiết tốt nên chúng tôi đã
-              chụp được rất nhiều ảnh. Chắc chắn đáng để ghé thăm và rất khuyến
-              khích khi bạn ghé thăm Đà Nẵng.
+              Bà Nà Hills đẹp mê hồn. Nơi này rất rộng lớn và là một nơi huyền
+              diệu như Disneyland và tôi thực sự đã yêu. Tôi không nghĩ chúng
+              tôi đã khám phá mọi nơi vì chúng tôi chỉ dành một ngày. Lời khuyên
+              của mình là nên đi xe riêng để có nhiều thời gian rảnh. Phong cảnh
+              rất đẹp và may mắn là thời tiết tốt nên chúng tôi đã chụp được rất
+              nhiều ảnh. Chắc chắn đáng để ghé thăm và rất khuyến khích khi bạn
+              ghé thăm Đà Nẵng.
             </p>
           </div>
         </div>
@@ -484,7 +393,7 @@
                 >Private Check-out Tour:Bà Nà Hills,Da Nang Airport Drop-off</a
               >
             </p>
-            <p>Người dùng TRAVELS Đăng 40 ngày trước</p>
+            <p>Người dùng TRAVLES Đăng 40 ngày trước</p>
             <p>
               Buổi sáng đón khách suôn sẻ,không cần lo lắng về hành lý, ra vào
               thuận tiện vì tôi đã nhận được vé điện tử đi Bà Nà Hills,dịch vụ
@@ -616,7 +525,6 @@
         <button class="next1"><i class="fa-solid fa-chevron-right"></i></button>
       </div>
     </div>
-
     <h1 class="h1xuhuong">Xu hướng</h1>
     <div class="xuhuong">
       <div class="slider-img">
@@ -628,10 +536,9 @@
               >
             </div>
             <div class="item2">
-              <img
-                src="./../img/Núi thần tài/14934312475544 (1).jpg"
-                alt=""
-              /><a>Núi thần tài</a>
+              <img src="./../img/ban-dao-son-tra-3-1024x550.webp" alt="" /><a
+                >Bán Đảo Sơn Trà</a
+              >
             </div>
             <div class="item3">
               <img src="./../img/ngũ hành sơn.jpg" alt="" /><a>Ngũ Hành Sơn</a>
@@ -647,103 +554,28 @@
         <button class="next2"><i class="fa-solid fa-chevron-right"></i></button>
       </div>
       <div class="content1">
-        <h2>1. Địa điểm du lịch bán đảo Sơn Trà hấp dẫn</h2>
-        <strong
-          >1.1. Chùa Linh Ứng - Biểu tượng thiêng liêng và thanh khiết</strong
-        >
         <p>
-          Chùa Linh Ứng tại bán đảo Sơn Trà, là biểu tượng văn hóa và tâm linh
-          nổi tiếng của thành phố Đà Nẵng. Đến với đảo, du khách có cơ hội đắm
-          mình trong không gian tĩnh lặng và tâm linh tại chùa, nơi độ cao 693m
-          so với mực nước biển tạo nên một khung cảnh tráng lệ. Đây cũng là nơi
-          đặt bức tượng Phật Quan Thế m cao nhất Việt Nam, vươn cao tới 67m,
-          hướng về phía đất liền nô nức.
-        </p>
-        <strong>1.2. Đỉnh Bàn Cờ</strong>
-        <p>
-          Được mệnh danh là “mắt thần Đông Dương” hay “viên ngọc quý của Đà
-          Nẵng”, bán Đảo Sơn Trà nổi bật với ba mặt tiếp xúc với biển cả và mặt
-          còn lại giáp với trung tâm thành phố. Từ đỉnh Bàn Cờ, du khách có thể
-          chiêm ngưỡng toàn bộ khung cảnh hùng vĩ nơi đây, từ những toà nhà trọc
-          trời trong khu phố sầm uất đến những rừng cây xanh mát và bãi biển cát
-          trắng mịn màng dọc thành phố.
-        </p>
-        <strong
-          >1.3. Hải Đăng Tiên Sa - Một trong những hải đăng cổ và đẹp nhất Việt
-          Nam</strong
-        >
-        <p>
-          Nằm ở độ cao 223 mét so với mực nước biển, ngọn hải đăng Sơn Trà là
-          biểu tượng thể hiện sự hòa quyện giữa thiên nhiên và kiến trúc, tạo
-          nên bức tranh hòa quyện tuyệt vời bên bờ đảo. Tại đây, du khách có thể
-          tận hưởng tầm nhìn toàn cảnh của biển cả và cảm giác yên bình giữa
-          những thảm cỏ xanh tươi.
-        </p>
-        <strong
-          >1.4. Cây Đa Ngàn Năm Tuổi - Linh hồn bất tử trong rừng Sơn
-          Trà</strong
-        >
-        <p>
-          Nằm trong khu rừng nguyên sinh Sơn Trà, cây đa trở thành điểm dừng
-          chân thú vị cho những chuyến du lịch sinh thái. Với khoảng 800 năm
-          tuổi, cây đa trên bán đảo Sơn Trà là một chứng nhân sống về sự mãnh
-          liệt và bền bỉ của thiên nhiên. Cùng thân cây to lớn, rễ phụ phát
-          triển mạnh mẽ và tán lá rộng lớn, cây đa ngàn năm tuổi này là biểu
-          tượng của sự kết nối giữa con người và thiên nhiên, mang trong mình
-          hàng thế kỷ lịch sử.
-        </p>
-        <strong>1.5. Những bãi biển đẹp trên bán đảo Sơn Trà</strong>
-        <p>
-          Bán Đảo Sơn Trà không chỉ nổi tiếng với phong cảnh hữu tình mà còn có
-          những bãi biển đẹp như tranh vẽ như Bãi Tiên Sa, Bãi Bụt và Bãi Đá
-          Đen. Bạn có thể thả mình vào làn nước biển trong xanh, hay tắm nắng
-          trên bãi cát trắng mịn màng và nhâm nhi một ly cocktail để tận hưởng
-          những khoảnh khắc thư giãn và bình yên.
-        </p>
-        <h2>2. Hoạt động vui chơi HOT nhất trên bán đảo Sơn Trà</h2>
-        <strong>Lặn ngắm san hô</strong>
-        <p>
-          Bán Đảo Sơn Trà không chỉ là vẻ đẹp trên cạn, mà còn hứa hẹn những
-          trải nghiệm tuyệt vời dưới biển. Dưới sự hướng dẫn của những chuyên
-          gia lặn biển, bạn sẽ được đắm chìm vào dòng nước biển trong vắt và
-          những rạn san hô đầy màu sắc, tận hưởng cảm giác đặt chân vào thế giới
-          tự do dưới đáy biển.
-        </p>
-        <strong>Du ngoạn trên du thuyền bán đảo Sơn Trà</strong>
-        <p>
-          Trải nghiệm du thuyền sang trọng xuyên qua làn nước biển xanh ngút
-          ngàn và ngắm nhìn Bán Đảo Sơn Trà từ một góc nhìn hoàn toàn khác! Cảm
-          nhận sự hùng vĩ của những đỉnh núi, thảm rừng xanh bát ngát, và bãi
-          biển tuyệt đẹp trải dài, tạo nên một hành trình trên biển thú vị.
-          Chuyến thưởng ngoạn trên du thuyền sẽ đưa bạn đến những địa điểm nổi
-          tiếng như hải đăng Tiên Sa và các bãi biển tuyệt đẹp như Bãi Tiên Sa,
-          Bãi Bụt, nơi bạn có thể thả mình vào làn nước biển trong xanh và tận
-          hưởng sự thư thái của không gian biển xanh bao la.
-        </p>
-        <strong>Trải nghiệm dù lượn</strong>
-        <p>
-          Nếu bạn là người thích mạo hiểm, hãy thử trải nghiệm dù lượn trên bán
-          đảo Sơn Trà. Bạn sẽ được bay trên đỉnh cao, tận hưởng cảm giác tự do
-          và bay lượn giữa không trung. Từ độ cao này, bạn có thể ngắm nhìn toàn
-          cảnh thành phố Đà Nẵng, bán đảo Sơn Trà, và biển xanh bao la dưới
-          chân**
-        </p>
-        <strong>Thưởng thức hải sản tươi ngon</strong>
-        <p>
-          Không thể thiếu trong danh sách trải nghiệm tại bán đảo Sơn Trà là
-          việc thưởng thức hải sản đậm đà bị miền Trung. Với bãi biển xung
-          quanh, bạn sẽ được thoả mãn vị giác với những món hải sản thơm lừng và
-          những bữa tiệc ẩm thực đáng nhớ bên bờ biển.
+          Núi Thần Tài (hay Công Viên Suối Khoáng Nóng Thần Tài) toạ lạc tại
+          thôn Phú Túc, xã Hoà Phú, huyện Hoà Vang, thành phố Đà Nẵng. Đây là
+          khu du lịch sinh thái nổi tiếng ở Đà Nẵng, trực thuộc khu bảo tồn
+          thiên nhiên Bà Nà Núi Chúa. Với tổng diện tích hơn 60 héc-ta, có thể
+          miêu tả Công Viên Suối Khoáng Nóng Thần Tài như một “ốc đảo nghỉ
+          dưỡng” giữa không gian rừng nguyên sinh bạt ngàn, với khí hậu quanh
+          năm ôn hoà khác hẳn với thời tiết miền Trung khắc nghiệt. Tận dụng
+          nguồn suối khoáng nóng tự nhiên, nhiều hoạt động chăm sóc sắc đẹp, sức
+          khoẻ, vui chơi và giải trí ở Núi Thần Tài đang rất “được lòng” du
+          khách lẫn người dân địa phương; đơn cử như spa, dịch vụ tắm nước
+          khoáng nóng, tắm bùn, tắm trà, công viên nước,…
         </p>
       </div>
       <a href="#!" class="xemthem"><u>Xem thêm</u></a>
       <a href="#!" class="xemithon"><u>Xem ít hơn</u></a>
     </div>
-    <h1>Những câu hỏi phổ biến về Bán Đảo Sơn Trà Đà Nẵng</h1>
+    <h1>Những câu hỏi phổ biến về Núi Thần Tài</h1>
 
     <div class="thongtin">
       <div>
-        <h2>Bán Đảo Sơn Trà Thành Phố Đà Nẵng ở đâu?</h2>
+        <h2>Núi Thần Tài thành phố Đà Nẵng ở đâu ?</h2>
         <i id="up" class="fa-solid fa-chevron-up"></i>
         <i id="down" class="fa-solid fa-chevron-down"></i>
         <p>
@@ -754,20 +586,20 @@
         </p>
       </div>
       <div>
-        <h2>Cách di chuyển đến Bán Đảo Sơn Trà từ Đà Nẵng?</h2>
+        <h2>Cách di chuyển đến Núi thần tài từ Đà Nẵng?</h2>
         <i id="up" class="fa-solid fa-chevron-up"></i>
         <i id="down" class="fa-solid fa-chevron-down"></i>
         <p>
           Bán đảo Sơn Trà nằm ở phía đông bắc thành phố Đà Nẵng, cách trung tâm
           thành phố khoảng 10 kilomét. Bạn có thể đến Bán Đảo Sơn Trà bằng xe ô
           tô hoặc xe máy từ trung tâm thành phố Đà Nẵng. Khi chọn các tour du
-          lịch bán đảo Sơn Trà trên TRAVELS, bạn sẽ được cung cấp dịch vụ đưa
+          lịch bán đảo Sơn Trà trên TRAVLES, bạn sẽ được cung cấp dịch vụ đưa
           đón miễn phí từ khách sạn đến đảo. Tham khảo thêm thông tin ở mục “Chi
           tiết gói dịch vụ” của các tour bên trên.
         </p>
       </div>
       <div>
-        <h2>Tham quan Núi Sơn Trà mùa nào đẹp nhất?</h2>
+        <h2>Tham quan Núi thần tài mùa nào đẹp nhất?</h2>
         <i id="up" class="fa-solid fa-chevron-up"></i>
         <i id="down" class="fa-solid fa-chevron-down"></i>
         <p>
@@ -780,7 +612,7 @@
         </p>
       </div>
       <div>
-        <h2>Ăn gì ở bán đảo Sơn Trà thành phố Đà Nẵng?</h2>
+        <h2>Ăn gì ở Núi thần tài thành phố Đà Nẵng?</h2>
         <i id="up" class="fa-solid fa-chevron-up"></i>
         <i id="down" class="fa-solid fa-chevron-down"></i>
         <p>
@@ -793,7 +625,7 @@
         </p>
       </div>
       <div>
-        <h2>Cần chuẩn bị những gì cho chuyến du lịch bán đảo Sơn Trà?</h2>
+        <h2>Cần chuẩn bị những gì cho chuyến du lịch Núi thần tài?</h2>
         <i id="up" class="fa-solid fa-chevron-up"></i>
         <i id="down" class="fa-solid fa-chevron-down"></i>
         <p>
@@ -901,6 +733,6 @@
       </div>
     </footer>
 
-    <script src="./../js/bandaosontra.js"></script>
+    <script src="./../js/nuithantai.js"></script>
   </body>
 </html>

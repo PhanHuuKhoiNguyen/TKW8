@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Trang chủ</title>
 
     <link
       rel="stylesheet"
@@ -29,79 +29,11 @@
     />
   </head>
   <body>
-    <header>
-      <div class="header_top">
-        <div><h1>TRAVELS</h1></div>
-        <div>
-          <input type="search" name="" id="searchInput" placeholder="" /><i
-            class="fa-solid fa-magnifying-glass"
-          ></i>
-        </div>
-        <div>
-          <i class="fa-solid fa-phone-volume"></i>
-          <span>Hotline</span><span>08796366334</span>
-        </div>
-        <a href="./signup.html" id="dangky">Đăng ký</a>
-        <a href="./login-form.html" id="dangnhap">Đăng nhập</a>
-      </div>
-      <div class="header_middle">
-        <ul>
-          <li>
-            <a href="./Home_page.html">Trang chủ </a>
-          </li>
-          <li>
-            <a class="a" href="#!"
-              >Bạn muốn đi đâu<i class="fa-solid fa-chevron-up"></i
-            ></a>
-          </li>
-          <li>
-            <a href="./../html/gioithieu.html">Giới thiệu </a>
-          </li>
-          <li>
-            <a href="./../html/blog.html">Blog </a>
-          </li>
-          <li>
-            <a href="./../html/lienhe.html">Liên hệ </a>
-          </li>
-        </ul>
-      </div>
-      <div class="header_bot">
-        <ul>
-          <li><a href="./banahills.html">Bà Nà Hills</a></li>
-          <li><a href="./bandaosontra.html">Bán đảo Sơn Trà</a></li>
-          <li><a href="./nguhanhson.html">Ngũ Hành Sơn</a></li>
-          <li><a href="./nuithantai.html">Núi thần tài</a></li>
-          <li><a href="./hoian.html">Hội An</a></li>
-        </ul>
-      </div>
-    </header>
-    <header class="headermobile">
-      <ul>
-        <li><i id="openmenu" class="fa-solid fa-bars"></i></li>
-        <li><h2>TRAVELS</h2></li>
-        <li><a href="./login-form.html" id="dangnhap">Đăng nhập</a></li>
-      </ul>
-      <div class="menu">
-        <div class="menutop">
-          <h1>Danh mục</h1>
-          <i id="closemenu" class="fa-solid fa-xmark"></i>
-        </div>
-        <div class="menubot">
-          <div><a href="./Home_page.html">Trang chủ</a></div>
-          <div class="banmuondidau">
-            <a href="#!">Bạn muốn đi đâu</a>
-            <div><a href="./banahills.html">Bà Nà Hills</a></div>
-            <div><a href="./bandaosontra.html">Bán Đảo Sơn Trà</a></div>
-            <div><a href="./nguhanhson.html">Ngũ Hành Sơn</a></div>
-            <div><a href="./nuithantai.html">Núi Thần Tài</a></div>
-            <div><a href="./hoian.html">Hội An</a></div>
-          </div>
-          <div><a href="./gioithieu.html">Giới thiệu</a></div>
-          <div><a href="./blog.html">Blog</a></div>
-          <div><a href="./lienhe.html">Liên hệ</a></div>
-        </div>
-      </div>
-    </header>
+
+    <?php
+      include("menu.php");
+    ?>
+
     <div class="slider">
       <div class="list">
         <div class="item">
