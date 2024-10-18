@@ -16,32 +16,9 @@
 </head>
 
 <body>
-
-    <!-- <div class="booking">
-        <form action="./../controller/booktour.php" method="post" id="booktour">
-            <ul>
-                <li>
-                    <input type="text" name="" id="">
-                    <input type="number" name="" id="">
-                </li>
-                <li>
-                    <input type="number" name="" id="">
-                </li>
-                <li><select name="" id="">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                    </select></li>
-                <li><input type="text" name="" id=""></li>
-                <li><input type="date" name="" id=""></li>
-                <li><input type="text" name="" id=""></li>
-                <li><textarea name="" id=""></textarea></li>
-                <li><input type="submit" value=""> <input type="submit" value=""></li>
-            </ul>
-        </form>
-    </div> -->
+    <?php
+        include("menu.php");
+    ?>
     <div class="slider">
         <div class="list">
             <div class="item">

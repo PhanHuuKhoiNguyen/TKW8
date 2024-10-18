@@ -59,10 +59,12 @@
                 <li>
                     <a href="./../html/lienhe.php">Liên hệ </a>
                 </li>
+                <li>
+                    <a href="#">Giỏ hàng </a>
+                </li>
             </ul>
           </div>
 
-          <a href="./signup.php" id="dangky">Đăng ký</a>
           <a href="./login-form.php" id="dangnhap">Đăng nhập</a>
         </div>
     </header>
@@ -115,10 +117,5 @@
           });
       });
     </script>
-
-    <script src="./../js/main.js"></script>
-    <script src="./../js/gioithieu.js"></script>
-    <script src="./../js/blog.js"></script>
-    <script src="./../js/lienhe.js"></script>
 </body>
 </html>
