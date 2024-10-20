@@ -459,7 +459,7 @@ h1 {
   display: flex;
   position: relative;
 }
-.feedback-mobile .list-feedback .item div {
+.feedback-mobile .list-feedback .item .item-page {
   width: 75%;
   height: 250px;
   border: 1px solid rgb(213, 210, 210);
@@ -473,52 +473,52 @@ h1 {
   position: absolute;
 }
 
-.feedback-mobile .item div i:nth-child(1) {
-  top: 7%;
-  left: 3%;
+.feedback-mobile .item .item-page i:nth-child(1) {
+  top: 28%;
+  margin-left: 3%;
 }
-.feedback-mobile .item div i:nth-child(2) {
-  top: 7%;
-  left: 8.5%;
+.feedback-mobile .item .item-page i:nth-child(2) {
+  top: 28%;
+  margin-left: 8.5%;
 }
-.feedback-mobile .item div i:nth-child(3) {
-  top: 7%;
-  left: 14%;
+.feedback-mobile .item .item-page i:nth-child(3) {
+  top: 28%;
+  margin-left: 14%;
 }
-.feedback-mobile .item div i:nth-child(4) {
-  top: 7%;
-  left: 19.5%;
+.feedback-mobile .item .item-page i:nth-child(4) {
+  top: 28%;
+  margin-left: 19.5%;
 }
-.feedback-mobile .item div i:nth-child(5) {
-  top: 7%;
-  left: 25%;
+.feedback-mobile .item .item-page i:nth-child(5) {
+  top: 28%;
+  margin-left: 25%;
 }
-.feedback-mobile .item div p:nth-child(6) {
+.feedback-mobile .item .item-page .item-danh-gia {
   position: absolute;
   font-size: 15px;
-  left: 3%;
-  top: 17%;
+  margin-left: 3%;
+  top: 37%;
   opacity: 0.8;
 }
-.feedback-mobile .item p a {
+.feedback-mobile .item .item-page .item-danh-gia a {
   color: blue;
   opacity: 0.9;
 }
-.feedback-mobile .item div p:nth-child(7) {
+.feedback-mobile .item .item-page .item-ten-khach {
   position: absolute;
   font-size: 15px;
-  left: 3%;
-  top: 31%;
+  margin-left: 3%;
+  top: 52%;
   opacity: 0.8;
 }
 
-.feedback-mobile .item div p:nth-child(8) {
+.feedback-mobile .item .item-page .item-comment {
   position: absolute;
   font-size: 15px;
-  left: 3%;
-  top: 38%;
+  margin-left: 3%;
+  top: 60%;
   width: 95%;
-  height: 140px;
+  height: 90px;
   overflow: auto;
   opacity: 0.8;
   line-height: 1.4;
@@ -528,6 +528,22 @@ h1 {
     rgba(255, 255, 255, 1)
   );
   text-align: justify;
+}
+
+.feedback-mobile .circle-image {
+  width: 60px ;
+  height: 60px ;
+  border-radius: 100% ;
+  overflow: hidden;
+  margin-left: 8%;
+  margin-top: 2%;
+  display: block;
+}
+
+.feedback-mobile .circle-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
 }
 
 .buttonss {

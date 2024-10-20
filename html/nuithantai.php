@@ -17,7 +17,7 @@
 <body>
     <header>
         <div class="header_top">
-            <div>
+            <div style="cursor: pointer;" onclick="window.location.href='./Home_page.php'">
                 <h1>TRAVELS</h1>
             </div>
             <div>
@@ -307,15 +307,21 @@
     <div class="feedback">
         <div class="list-feedback">
             <div class="item">
-                <div class="item1">
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                <div class="item-page item1">
+                    <div class="circle-image">
+                        <img src="https://via.placeholder.com/150" alt="Hình tròn">
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                         class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    <p>
+                    </div>
+                    <div>
+                    <p class="item-danh-gia">
                         Đánh giá cho:
                         <a href="">Tour Ngày Tham Quan Bà Nà Hills Từ Đà Nẵng</a>
                     </p>
-                    <p>Angielou ****** Đăng 11 ngày trước</p>
-                    <p>
+                    <p class="item-ten-khach">Angielou ****** Đăng 11 ngày trước</p>
+                    <p class="item-comment">
                         Hành trình tốt. Xe bán tải gọn gàng. Hướng dẫn viên du lịch, ông
                         Chai, rất lôi cuốn, xen vào đó là những câu chuyện cười. Anh ấy đã
                         cố gắng hết sức để tập hợp và phân nhóm mọi người, nhưng mỗi nhóm
@@ -323,15 +329,22 @@
                         vào cuối chuyến đi thật bất ngờ. Nhìn chung, đáng đồng tiền bát
                         gạo.
                     </p>
+                    </div>
                 </div>
-                <div class="item2">
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                <div class="item-page item2">
+                    <div class="circle-image">
+                        <img src="https://via.placeholder.com/150" alt="Hình tròn">
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                         class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    <p>
+                    </div>
+                    <div>
+                    <p class="item-danh-gia">
                         Đánh giá cho: <a href="">Tour Bà Nà Hills 1 Ngày Từ Đà Nẵng</a>
                     </p>
-                    <p>Người dùng TRAVLES Đăng 7 ngày trước</p>
-                    <p>
+                    <p class="item-ten-khach">Người dùng TRAVLES Đăng 7 ngày trước</p>
+                    <p class="item-comment">
                         Những ngọn đồi thật tuyệt vời! Có quá nhiều việc phải làm trong
                         thời gian ngắn như vậy. Nơi tuyệt vời và cũng đáng để ghé thăm.
                         Chúng tôi đã đặt một chuyến du lịch riêng với hy vọng tối đa hóa
@@ -354,30 +367,44 @@
                         bọn trẻ đã vui vẻ và chúng tôi đã thấy những gì chúng tôi muốn
                         thấy.
                     </p>
+                    </div>
                 </div>
             </div>
             <div class="item">
-                <div class="item3">
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                <div class="item-page item3">
+                    <div class="circle-image">
+                        <img src="https://via.placeholder.com/150" alt="Hình tròn">
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                         class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    <p>Đánh giá cho: <a href="">Tour Ngày Sun World Bà Nà Hills</a></p>
-                    <p>Người dùng TRAVLES Đăng 7 ngày trước</p>
-                    <p>
+                    </div>
+                    <div>
+                    <p class="item-danh-gia">Đánh giá cho: <a href="">Tour Ngày Sun World Bà Nà Hills</a></p>
+                    <p class="item-ten-khach">Người dùng TRAVLES Đăng 7 ngày trước</p>
+                    <p class="item-comment">
                         Hướng dẫn viên Long của chúng tôi thật tuyệt vời, anh ấy có kinh
                         nghiệm và đưa chúng tôi di chuyển để tránh đám đông. Hành trình
                         thực sự có giá trị đồng tiền. Giải thích dài dòng và lập kế hoạch
                         vượt xa sự mong đợi của chúng tôi! Nhóm 9 người của chúng tôi thực
                         sự thích thú. Cảm ơn
                     </p>
+                    </div>
                 </div>
-                <div class="item4">
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                <div class="item-page item4">
+                    <div class="circle-image">
+                        <img src="https://via.placeholder.com/150" alt="Hình tròn">
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                         class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    <p>
+                    </div>
+                    <div>
+                    <p class="item-danh-gia">
                         Đánh giá cho: <a href="">Tour Bà Nà Hills 1 Ngày Từ Đà Nẵng</a>
                     </p>
-                    <p>Cleopatra ****** Đăng 58 ngày trước</p>
-                    <p>
+                    <p class="item-ten-khach">Cleopatra ****** Đăng 58 ngày trước</p>
+                    <p class="item-comment">
                         Bà Nà Hills đẹp mê hồn. Nơi này rất rộng lớn và là một nơi huyền
                         diệu như Disneyland và tôi thực sự đã yêu. Tôi không nghĩ chúng
                         tôi đã khám phá mọi nơi vì chúng tôi chỉ dành một ngày. Lời khuyên
@@ -386,22 +413,30 @@
                         nhiều ảnh. Chắc chắn đáng để ghé thăm và rất khuyến khích khi bạn
                         ghé thăm Đà Nẵng.
                     </p>
+                    </div>
                 </div>
             </div>
             <div class="item">
-                <div class="item5">
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                <div class="item-page item5">
+                    <div class="circle-image">
+                        <img src="https://via.placeholder.com/150" alt="Hình tròn">
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                         class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    <p>
+                    </div>
+                    <div>
+                    <p class="item-danh-gia">
                         Đánh giá cho:<a href="">Private Check-out Tour:Bà Nà Hills,Da Nang Airport Drop-off</a>
                     </p>
-                    <p>Người dùng TRAVLES Đăng 40 ngày trước</p>
-                    <p>
+                    <p class="item-ten-khach">Người dùng TRAVLES Đăng 40 ngày trước</p>
+                    <p class="item-comment">
                         Buổi sáng đón khách suôn sẻ,không cần lo lắng về hành lý, ra vào
                         thuận tiện vì tôi đã nhận được vé điện tử đi Bà Nà Hills,dịch vụ
                         mát-xa tốt, bữa tối là bữa ăn Việt Nam tự nấu và tôi cũng rất
                         thích bia.
                     </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -413,15 +448,21 @@
     <div class="feedback-mobile">
         <div class="list-feedback">
             <div class="item">
-                <div>
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                <div class="item-page">
+                    <div class="circle-image">
+                        <img src="https://via.placeholder.com/150" alt="Hình tròn">
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                         class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    <p>
+                    </div>
+                    <div>
+                    <p class="item-danh-gia">
                         Đánh giá cho:
                         <a href="">Tour Ngày Tham Quan Bà Nà Hills Từ Đà Nẵng</a>
                     </p>
-                    <p>Angielou ****** Đăng 11 ngày trước</p>
-                    <p>
+                    <p class="item-ten-khach">Angielou ****** Đăng 11 ngày trước</p>
+                    <p class="item-comment">
                         Hành trình tốt. Xe bán tải gọn gàng. Hướng dẫn viên du lịch, ông
                         Chai, rất lôi cuốn, xen vào đó là những câu chuyện cười. Anh ấy đã
                         cố gắng hết sức để tập hợp và phân nhóm mọi người, nhưng mỗi nhóm
@@ -429,17 +470,24 @@
                         vào cuối chuyến đi thật bất ngờ. Nhìn chung, đáng đồng tiền bát
                         gạo.
                     </p>
+                    </div>
                 </div>
             </div>
             <div class="item">
-                <div>
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                <div class="item-page">
+                    <div class="circle-image">
+                        <img src="https://via.placeholder.com/150" alt="Hình tròn">
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                         class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    <p>
+                    </div>
+                    <div>
+                    <p class="item-danh-gia">
                         Đánh giá cho: <a href="">Tour Bà Nà Hills 1 Ngày Từ Đà Nẵng</a>
                     </p>
-                    <p>Người dùng TRAVELS Đăng 7 ngày trước</p>
-                    <p>
+                    <p class="item-ten-khach">Người dùng TRAVLES Đăng 7 ngày trước</p>
+                    <p class="item-comment">
                         Những ngọn đồi thật tuyệt vời! Có quá nhiều việc phải làm trong
                         thời gian ngắn như vậy. Nơi tuyệt vời và cũng đáng để ghé thăm.
                         Chúng tôi đã đặt một chuyến du lịch riêng với hy vọng tối đa hóa
@@ -462,15 +510,22 @@
                         bọn trẻ đã vui vẻ và chúng tôi đã thấy những gì chúng tôi muốn
                         thấy.
                     </p>
+                    </div>
                 </div>
             </div>
             <div class="item">
-                <div>
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                <div class="item-page">
+                    <div class="circle-image">
+                        <img src="https://via.placeholder.com/150" alt="Hình tròn">
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                         class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    <p>Đánh giá cho: <a href="">Tour Ngày Sun World Bà Nà Hills</a></p>
-                    <p>Người dùng TRAVELS Đăng 7 ngày trước</p>
-                    <p>
+                    </div>
+                    <div>
+                    <p class="item-danh-gia">Đánh giá cho: <a href="">Tour Ngày Sun World Bà Nà Hills</a></p>
+                    <p class="item-ten-khach">Người dùng TRAVLES Đăng 7 ngày trước</p>
+                    <p class="item-comment">
                         Hướng dẫn viên Long của chúng tôi thật tuyệt vời, anh ấy có kinh
                         nghiệm và đưa chúng tôi di chuyển để tránh đám đông. Hành trình
                         thực sự có giá trị đồng tiền. Giải thích dài dòng và lập kế hoạch
@@ -480,14 +535,20 @@
                 </div>
             </div>
             <div class="item">
-                <div>
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                <div class="item-page">
+                    <div class="circle-image">
+                        <img src="https://via.placeholder.com/150" alt="Hình tròn">
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                         class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    <p>
+                    </div>
+                    <div>
+                    <p class="item-danh-gia">
                         Đánh giá cho: <a href="">Tour Bà Nà Hills 1 Ngày Từ Đà Nẵng</a>
                     </p>
-                    <p>Cleopatra ****** Đăng 58 ngày trước</p>
-                    <p>
+                    <p class="item-ten-khach">Cleopatra ****** Đăng 58 ngày trước</p>
+                    <p class="item-comment">
                         Bà Nà Hills đẹp mê hồn. Nơi này rất rộng lớn và là một nơi huyền
                         diệu như Disneyland và tôi thực sự đã yêu. Tôi không nghĩ chúng
                         tôi đã khám phá mọi nơi vì chúng tôi chỉ dành một ngày. Lời khuyên
@@ -496,22 +557,30 @@
                         nhiều ảnh. Chắc chắn đáng để ghé thăm và rất khuyến khích khi bạn
                         ghé thăm Đà Nẵng.
                     </p>
+                    </div>
                 </div>
             </div>
             <div class="item">
-                <div>
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                <div class="item-page">
+                    <div class="circle-image">
+                        <img src="https://via.placeholder.com/150" alt="Hình tròn">
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                         class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    <p>
+                    </div>
+                    <div>
+                    <p class="item-danh-gia">
                         Đánh giá cho:<a href="">Private Check-out Tour:Bà Nà Hills,Da Nang Airport Drop-off</a>
                     </p>
-                    <p>Người dùng TRAVELS Đăng 40 ngày trước</p>
-                    <p>
+                    <p class="item-ten-khach">Người dùng TRAVLES Đăng 40 ngày trước</p>
+                    <p class="item-comment">
                         Buổi sáng đón khách suôn sẻ,không cần lo lắng về hành lý, ra vào
                         thuận tiện vì tôi đã nhận được vé điện tử đi Bà Nà Hills,dịch vụ
                         mát-xa tốt, bữa tối là bữa ăn Việt Nam tự nấu và tôi cũng rất
                         thích bia.
                     </p>
+                    </div>
                 </div>
             </div>
         </div>

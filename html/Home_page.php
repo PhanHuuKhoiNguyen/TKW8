@@ -18,7 +18,7 @@
 <body>
     <header>
         <div class="header_top">
-            <div>
+            <div style="cursor: pointer;" onclick="window.location.href='./Home_page.php'">
                 <h1>TRAVELS</h1>
             </div>
             <div>

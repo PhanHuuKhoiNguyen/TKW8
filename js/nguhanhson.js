@@ -47,6 +47,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+// Cuộn header
+let lastScrollTop = 0;
+const delta = 10; // Độ nhạy của cuộn
+
+window.addEventListener("scroll", function () {
+  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  const menu = document.querySelector(".header_top");
+
+  if (Math.abs(lastScrollTop - currentScroll) <= delta) return; // Bỏ qua nếu cuộn không đủ lớn
+
+  if (currentScroll > lastScrollTop) {
+    menu.style.top = "-100px"; // Ẩn menu khi cuộn xuống
+  } else {
+    menu.style.top = "0"; // Hiện menu khi cuộn lên
+  }
+
+  lastScrollTop = currentScroll;
+});
+
 // slider-----------------------------------
 let list = document.querySelector(".slider .list");
 let item = document.querySelectorAll(".slider .list .item");
